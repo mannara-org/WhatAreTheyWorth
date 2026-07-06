@@ -1,60 +1,47 @@
 package model;
 
-import orm.Table;
-
 import orm.Constraints;
+import orm.Table;
 
 import static orm.Constraints.*;
 
 import java.util.Vector;
 
-public class Group extends Table {
+public class Section extends Table {
 
     static {
-        registerModel(Group.class);
+        registerModel(Section.class);
     }
 
     @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
-    private TeachingAssistant teachingAssistant;
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
-    private Section section;
+    private Specialty specialty;
 
     @Constraints(type = INT, nullable = false)
     private Integer number;
 
-    public Group() {
+    public Section() {
     }
 
-    public Group(TeachingAssistant teachingAssistant, Section section, Integer number) {
-        this.teachingAssistant = teachingAssistant;
-        this.section = section;
+    public Section(Specialty specialty, Integer number) {
+        this.specialty = specialty;
         this.number = number;
     }
 
-    public Section getSection() {
-        return section;
+    public Specialty getSpecialty() {
+        return specialty;
     }
 
-    public void setSection(Section section) {
-        this.section = section;
+    public Section setSpecialty(Specialty specialty) {
+        this.specialty = specialty;
+        return this;
     }
 
     public Integer getNumber() {
         return number;
     }
 
-    public Group setNumber(Integer number) {
+    public void setNumber(Integer number) {
         this.number = number;
-        return this;
-    }
-
-    public TeachingAssistant getTeachingAssistant() {
-        return teachingAssistant;
-    }
-
-    public Group setTeachingAssistant(TeachingAssistant teachingAssistant) {
-        this.teachingAssistant = teachingAssistant;
-        return this;
     }
 
     public static boolean isSearchable() {

@@ -1,0 +1,60 @@
+package model;
+
+import orm.Constraints;
+import static orm.Constraints.*;
+
+import java.util.Vector;
+
+import orm.Table;
+
+public class Enrollment extends Table {
+
+    static {
+        registerModel(Enrollment.class);
+    }
+
+    @Constraints(type = UNDEFINED, foreignKey = true)
+    private Student student;
+    @Constraints(type = UNDEFINED, foreignKey = true)
+    private Course course;
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public Enrollment setStudent(Student student) {
+        this.student = student;
+        return this;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public Enrollment setCourse(Course course) {
+        this.course = course;
+        return this;
+    }
+
+    public static boolean isSearchable() {
+        return isSearchable("Enrollment");
+    }
+
+    public static Vector<Table> search() {
+        return search(new Enrollment());
+    }
+
+    public static Vector<Table> search(String attName, Object value) {
+        return search("Enrollment", attName, value);
+    }
+
+    public static Vector<Table> search(String boundedAttributeName, Object lowerBound, Object upperBound) {
+        return search(new Enrollment(), boundedAttributeName, lowerBound, upperBound);
+    }
+
+    public static Vector<Table> searchRanges(Vector<Range> boundedCriterias) {
+        Vector<Table> tuples = new Vector<>();
+        tuples.add(new Enrollment());
+        return search(tuples, boundedCriterias);
+    }
+}

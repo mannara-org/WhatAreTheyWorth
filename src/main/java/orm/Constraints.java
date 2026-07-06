@@ -10,7 +10,9 @@ import java.lang.annotation.ElementType;
 @Target(ElementType.FIELD)
 public @interface Constraints {
 
-    String INTEGER = "INT";
+    String INT = "INT";
+    String TEXT = "TEXT";
+    String UNDEFINED = "undefined";
 
     String type();
 
@@ -29,4 +31,8 @@ public @interface Constraints {
     boolean enumerated() default false;
 
     boolean unique() default false;
+
+    boolean foreignKey() default false;
+
+    boolean primaryKey() default false;
 }

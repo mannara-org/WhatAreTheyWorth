@@ -28,7 +28,7 @@ student
     - name
     - surname
     - matricule
-      
+
     - email
 
     - group (which also belongs to a specialty)
@@ -54,7 +54,7 @@ Deriving once again:
 TA
 	- name
 	- surname
-	  
+
 	- email
 	- phone number
 ```
@@ -75,6 +75,7 @@ thus yielding the following modelization:
 <div align="center">
 	<img src="./media/preliminary_modelization.svg">
 </div>
+
 # Framework Documentation
 
 ## Motivation
@@ -92,7 +93,29 @@ It was overall a great learning experience.
 
 ## Tutorial
 
+each model implementation `ModelClass` must:
+
+- extend the `Table` class
+- register itself:
+
+```java
+    static {
+        registerModel(ModelClass.class);
+    }
+```
+
+- use the `@Constraints` annotation for it's non-static fields
 - you can have static fields in models but you can't add fields other than to-be database columns
+
+- all fields must be private
+- impelement getters and setters for each field (to implement business logic details)
+
+- implement the static methods
+    - `isSearchable()`
+    - `search()`
+    - `search(String attName, Object value)`
+    - `search(String boundedAttributeName, Object lowerBound, Object upperBound)`
+    - `searchRanges(Vector<Range> boundedCriterias)`
 
 ## Dependencies
 

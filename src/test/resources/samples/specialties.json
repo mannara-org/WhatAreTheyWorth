@@ -1,0 +1,2349 @@
+[
+  {
+    "name": "SCIENCES ET TECHNOLOGIES",
+    "acronyme": "ST",
+    "cycle": "Licence",
+    "sections": [
+      {
+        "number": 1,
+        "groups": [
+          {
+            "number": 1,
+            "students": [
+              {
+                "name": "Taha",
+                "surname": "Haddad",
+                "matricule": "522021034806",
+                "email": "Taha.Haddad@gmail.com"
+              },
+              {
+                "name": "M\u00e9lissa",
+                "surname": "Bouchama",
+                "matricule": "214382740493",
+                "email": "M\u00e9lissa.Bouchama@gmail.com"
+              },
+              {
+                "name": "Cherif",
+                "surname": "Talbi",
+                "matricule": "294573809177",
+                "email": "Cherif.Talbi@gmail.com"
+              },
+              {
+                "name": "Adel",
+                "surname": "Boussaid",
+                "matricule": "764346720814",
+                "email": "Adel.Boussaid@gmail.com"
+              },
+              {
+                "name": "Hania",
+                "surname": "Ayadi",
+                "matricule": "291313537906",
+                "email": "Hania.Ayadi@gmail.com"
+              },
+              {
+                "name": "Amine",
+                "surname": "Ghazi",
+                "matricule": "998811432751",
+                "email": "Amine.Ghazi@gmail.com"
+              },
+              {
+                "name": "Wafae",
+                "surname": "Soudani",
+                "matricule": "782447989346",
+                "email": "Wafae.Soudani@gmail.com"
+              },
+              {
+                "name": "Sophia",
+                "surname": "Mokrani",
+                "matricule": "135203830777",
+                "email": "Sophia.Mokrani@gmail.com"
+              },
+              {
+                "name": "Adam",
+                "surname": "Belaidi",
+                "matricule": "312230011658",
+                "email": "Adam.Belaidi@gmail.com"
+              },
+              {
+                "name": "Salma",
+                "surname": "Azizi",
+                "matricule": "438072082957",
+                "email": "Salma.Azizi@gmail.com"
+              },
+              {
+                "name": "Sofia",
+                "surname": "Berkani",
+                "matricule": "426529795261",
+                "email": "Sofia.Berkani@gmail.com"
+              },
+              {
+                "name": "Fatima",
+                "surname": "Abdelaziz",
+                "matricule": "965851034789",
+                "email": "Fatima.Abdelaziz@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Derkaoui",
+                "matricule": "322843394731",
+                "email": "Houda.Derkaoui@gmail.com"
+              },
+              {
+                "name": "Hamza",
+                "surname": "Laib",
+                "matricule": "346628247002",
+                "email": "Hamza.Laib@gmail.com"
+              },
+              {
+                "name": "Oussama",
+                "surname": "Lahmar",
+                "matricule": "484991621501",
+                "email": "Oussama.Lahmar@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Djellal",
+                "matricule": "125273503787",
+                "email": "Mounir.Djellal@gmail.com"
+              },
+              {
+                "name": "Abderaouf",
+                "surname": "Benali",
+                "matricule": "833272981175",
+                "email": "Abderaouf.Benali@gmail.com"
+              },
+              {
+                "name": "Nadir",
+                "surname": "Ouchene",
+                "matricule": "532516662744",
+                "email": "Nadir.Ouchene@gmail.com"
+              },
+              {
+                "name": "Mehdi",
+                "surname": "Kouidri",
+                "matricule": "845681437022",
+                "email": "Mehdi.Kouidri@gmail.com"
+              },
+              {
+                "name": "Asma",
+                "surname": "Soltani",
+                "matricule": "639734766141",
+                "email": "Asma.Soltani@gmail.com"
+              },
+              {
+                "name": "Chiraz",
+                "surname": "Hammadi",
+                "matricule": "357057637437",
+                "email": "Chiraz.Hammadi@gmail.com"
+              },
+              {
+                "name": "Rabah",
+                "surname": "Yousfi",
+                "matricule": "459389355279",
+                "email": "Rabah.Yousfi@gmail.com"
+              },
+              {
+                "name": "Lynda",
+                "surname": "Abdelaziz",
+                "matricule": "993782268182",
+                "email": "Lynda.Abdelaziz@gmail.com"
+              },
+              {
+                "name": "Narimane",
+                "surname": "Boukhatem",
+                "matricule": "208462750634",
+                "email": "Narimane.Boukhatem@gmail.com"
+              },
+              {
+                "name": "Younes",
+                "surname": "Bouali",
+                "matricule": "832540498746",
+                "email": "Younes.Bouali@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "students": [
+              {
+                "name": "Farah",
+                "surname": "Djellal",
+                "matricule": "509387292146",
+                "email": "Farah.Djellal@gmail.com"
+              },
+              {
+                "name": "Ikram",
+                "surname": "Yahia",
+                "matricule": "700392487474",
+                "email": "Ikram.Yahia@gmail.com"
+              },
+              {
+                "name": "Rania",
+                "surname": "Benabdellah",
+                "matricule": "975731146441",
+                "email": "Rania.Benabdellah@gmail.com"
+              },
+              {
+                "name": "Said",
+                "surname": "Bouafia",
+                "matricule": "392850303111",
+                "email": "Said.Bouafia@gmail.com"
+              },
+              {
+                "name": "Ali",
+                "surname": "Yahi",
+                "matricule": "321036437643",
+                "email": "Ali.Yahi@gmail.com"
+              },
+              {
+                "name": "Ramzi",
+                "surname": "Yahiaoui",
+                "matricule": "962655029163",
+                "email": "Ramzi.Yahiaoui@gmail.com"
+              },
+              {
+                "name": "Oussama",
+                "surname": "Benyoucef",
+                "matricule": "921920333620",
+                "email": "Oussama.Benyoucef@gmail.com"
+              },
+              {
+                "name": "Meriem",
+                "surname": "Bouchama",
+                "matricule": "774950543601",
+                "email": "Meriem.Bouchama@gmail.com"
+              },
+              {
+                "name": "Aladin",
+                "surname": "Kaddouri",
+                "matricule": "256539829926",
+                "email": "Aladin.Kaddouri@gmail.com"
+              },
+              {
+                "name": "Manel",
+                "surname": "Abdelaziz",
+                "matricule": "654250479878",
+                "email": "Manel.Abdelaziz@gmail.com"
+              },
+              {
+                "name": "Lila",
+                "surname": "Bahloul",
+                "matricule": "162405662888",
+                "email": "Lila.Bahloul@gmail.com"
+              },
+              {
+                "name": "Samira",
+                "surname": "Medjahed",
+                "matricule": "784713886959",
+                "email": "Samira.Medjahed@gmail.com"
+              },
+              {
+                "name": "Younes",
+                "surname": "Lamri",
+                "matricule": "901522364208",
+                "email": "Younes.Lamri@gmail.com"
+              },
+              {
+                "name": "Sofia",
+                "surname": "Guendouz",
+                "matricule": "896424624334",
+                "email": "Sofia.Guendouz@gmail.com"
+              },
+              {
+                "name": "Maria",
+                "surname": "Bensaid",
+                "matricule": "241659303137",
+                "email": "Maria.Bensaid@gmail.com"
+              },
+              {
+                "name": "Lisa",
+                "surname": "Rais",
+                "matricule": "486617329947",
+                "email": "Lisa.Rais@gmail.com"
+              },
+              {
+                "name": "Kahina",
+                "surname": "Saoudi",
+                "matricule": "215177979726",
+                "email": "Kahina.Saoudi@gmail.com"
+              },
+              {
+                "name": "Chanez",
+                "surname": "Djebbar",
+                "matricule": "238278421401",
+                "email": "Chanez.Djebbar@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Bouafia",
+                "matricule": "377543550262",
+                "email": "Houda.Bouafia@gmail.com"
+              },
+              {
+                "name": "Lotfi",
+                "surname": "Malek",
+                "matricule": "235244752088",
+                "email": "Lotfi.Malek@gmail.com"
+              },
+              {
+                "name": "Samy",
+                "surname": "Moussaoui",
+                "matricule": "535418367665",
+                "email": "Samy.Moussaoui@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Taleb",
+                "matricule": "501300096528",
+                "email": "Mounir.Taleb@gmail.com"
+              },
+              {
+                "name": "Sonia",
+                "surname": "Chikh",
+                "matricule": "832127222711",
+                "email": "Sonia.Chikh@gmail.com"
+              },
+              {
+                "name": "Aya",
+                "surname": "Boubekeur",
+                "matricule": "415477059707",
+                "email": "Aya.Boubekeur@gmail.com"
+              },
+              {
+                "name": "Yanis",
+                "surname": "Mostefaoui",
+                "matricule": "638786293995",
+                "email": "Yanis.Mostefaoui@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "students": [
+              {
+                "name": "Nadia",
+                "surname": "Salah",
+                "matricule": "739020698681",
+                "email": "Nadia.Salah@gmail.com"
+              },
+              {
+                "name": "Leila",
+                "surname": "Dif",
+                "matricule": "482590754834",
+                "email": "Leila.Dif@gmail.com"
+              },
+              {
+                "name": "Omar",
+                "surname": "Sabri",
+                "matricule": "880612123236",
+                "email": "Omar.Sabri@gmail.com"
+              },
+              {
+                "name": "Soumia",
+                "surname": "Laribi",
+                "matricule": "887839087287",
+                "email": "Soumia.Laribi@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Allal",
+                "matricule": "399987407833",
+                "email": "Sami.Allal@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Arab",
+                "matricule": "206402983041",
+                "email": "Lyna.Arab@gmail.com"
+              },
+              {
+                "name": "Yasser",
+                "surname": "Boukhari",
+                "matricule": "297619688725",
+                "email": "Yasser.Boukhari@gmail.com"
+              },
+              {
+                "name": "Hadjer",
+                "surname": "Mesbah",
+                "matricule": "530170162151",
+                "email": "Hadjer.Mesbah@gmail.com"
+              },
+              {
+                "name": "Abdelkader",
+                "surname": "Kaci",
+                "matricule": "135415642020",
+                "email": "Abdelkader.Kaci@gmail.com"
+              },
+              {
+                "name": "Ibrahim",
+                "surname": "Abou",
+                "matricule": "410825058511",
+                "email": "Ibrahim.Abou@gmail.com"
+              },
+              {
+                "name": "Samy",
+                "surname": "Bahloul",
+                "matricule": "444617122835",
+                "email": "Samy.Bahloul@gmail.com"
+              },
+              {
+                "name": "Racha",
+                "surname": "Aissani",
+                "matricule": "339844744056",
+                "email": "Racha.Aissani@gmail.com"
+              },
+              {
+                "name": "Salim",
+                "surname": "Hocine",
+                "matricule": "327448767108",
+                "email": "Salim.Hocine@gmail.com"
+              },
+              {
+                "name": "Fella",
+                "surname": "Fares",
+                "matricule": "162232693859",
+                "email": "Fella.Fares@gmail.com"
+              },
+              {
+                "name": "Youba",
+                "surname": "Otmani",
+                "matricule": "981109383822",
+                "email": "Youba.Otmani@gmail.com"
+              },
+              {
+                "name": "Ikram",
+                "surname": "Said",
+                "matricule": "593657973393",
+                "email": "Ikram.Said@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Ammari",
+                "matricule": "185397974813",
+                "email": "Lyna.Ammari@gmail.com"
+              },
+              {
+                "name": "Nacer",
+                "surname": "Bey",
+                "matricule": "213395035945",
+                "email": "Nacer.Bey@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Malek",
+                "matricule": "730530556715",
+                "email": "Anissa.Malek@gmail.com"
+              },
+              {
+                "name": "Fares",
+                "surname": "Meddah",
+                "matricule": "655230414990",
+                "email": "Fares.Meddah@gmail.com"
+              },
+              {
+                "name": "Chanez",
+                "surname": "Soltani",
+                "matricule": "593505665935",
+                "email": "Chanez.Soltani@gmail.com"
+              },
+              {
+                "name": "Abdelkader",
+                "surname": "Benmoussa",
+                "matricule": "318107517413",
+                "email": "Abdelkader.Benmoussa@gmail.com"
+              },
+              {
+                "name": "Nazim",
+                "surname": "Chibani",
+                "matricule": "216039006742",
+                "email": "Nazim.Chibani@gmail.com"
+              },
+              {
+                "name": "Chabane",
+                "surname": "Brahimi",
+                "matricule": "810642574276",
+                "email": "Chabane.Brahimi@gmail.com"
+              },
+              {
+                "name": "Feriel",
+                "surname": "Kara",
+                "matricule": "282472207634",
+                "email": "Feriel.Kara@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "students": [
+              {
+                "name": "Zakaria",
+                "surname": "Lakhdari",
+                "matricule": "776294008536",
+                "email": "Zakaria.Lakhdari@gmail.com"
+              },
+              {
+                "name": "Lotfi",
+                "surname": "Aissaoui",
+                "matricule": "666767285152",
+                "email": "Lotfi.Aissaoui@gmail.com"
+              },
+              {
+                "name": "Amina",
+                "surname": "Mihoubi",
+                "matricule": "429436199154",
+                "email": "Amina.Mihoubi@gmail.com"
+              },
+              {
+                "name": "Hayat",
+                "surname": "Berkane",
+                "matricule": "790627327362",
+                "email": "Hayat.Berkane@gmail.com"
+              },
+              {
+                "name": "Hamid",
+                "surname": "Nacer",
+                "matricule": "454935472090",
+                "email": "Hamid.Nacer@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Amara",
+                "matricule": "655081111429",
+                "email": "Mounir.Amara@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Khaldi",
+                "matricule": "376183788974",
+                "email": "Hocine.Khaldi@gmail.com"
+              },
+              {
+                "name": "Safia",
+                "surname": "Boukhatem",
+                "matricule": "800233669443",
+                "email": "Safia.Boukhatem@gmail.com"
+              },
+              {
+                "name": "Mohamed",
+                "surname": "Salhi",
+                "matricule": "124646756079",
+                "email": "Mohamed.Salhi@gmail.com"
+              },
+              {
+                "name": "Nour",
+                "surname": "Boudiaf",
+                "matricule": "862308139644",
+                "email": "Nour.Boudiaf@gmail.com"
+              },
+              {
+                "name": "Bouchra",
+                "surname": "Khaldi",
+                "matricule": "387517850608",
+                "email": "Bouchra.Khaldi@gmail.com"
+              },
+              {
+                "name": "Lilia",
+                "surname": "Moulay",
+                "matricule": "860538546658",
+                "email": "Lilia.Moulay@gmail.com"
+              },
+              {
+                "name": "Aymen",
+                "surname": "Messaoudi",
+                "matricule": "489717759348",
+                "email": "Aymen.Messaoudi@gmail.com"
+              },
+              {
+                "name": "Yasmina",
+                "surname": "Hamadi",
+                "matricule": "832992909399",
+                "email": "Yasmina.Hamadi@gmail.com"
+              },
+              {
+                "name": "Ramzi",
+                "surname": "Boumaza",
+                "matricule": "467044447083",
+                "email": "Ramzi.Boumaza@gmail.com"
+              },
+              {
+                "name": "Mohammed",
+                "surname": "Ziane",
+                "matricule": "155409047258",
+                "email": "Mohammed.Ziane@gmail.com"
+              },
+              {
+                "name": "Narimane",
+                "surname": "Abou",
+                "matricule": "693797380992",
+                "email": "Narimane.Abou@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Malek",
+                "matricule": "190300662573",
+                "email": "Hocine.Malek@gmail.com"
+              },
+              {
+                "name": "Cherif",
+                "surname": "Haddad",
+                "matricule": "797819466358",
+                "email": "Cherif.Haddad@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Ayad",
+                "matricule": "385514108507",
+                "email": "Sami.Ayad@gmail.com"
+              },
+              {
+                "name": "Fodil",
+                "surname": "Boubekeur",
+                "matricule": "130179410719",
+                "email": "Fodil.Boubekeur@gmail.com"
+              },
+              {
+                "name": "Dounia",
+                "surname": "Saci",
+                "matricule": "745332240662",
+                "email": "Dounia.Saci@gmail.com"
+              },
+              {
+                "name": "Nour",
+                "surname": "Abbes",
+                "matricule": "393222130013",
+                "email": "Nour.Abbes@gmail.com"
+              },
+              {
+                "name": "Oussama",
+                "surname": "Saidani",
+                "matricule": "581034813939",
+                "email": "Oussama.Saidani@gmail.com"
+              },
+              {
+                "name": "Wassim",
+                "surname": "Djoudi",
+                "matricule": "772908455506",
+                "email": "Wassim.Djoudi@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "students": [
+              {
+                "name": "Mohand",
+                "surname": "Meddah",
+                "matricule": "308748273942",
+                "email": "Mohand.Meddah@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Madani",
+                "matricule": "732640320708",
+                "email": "Mounir.Madani@gmail.com"
+              },
+              {
+                "name": "Lisa",
+                "surname": "Boutaleb",
+                "matricule": "211601755834",
+                "email": "Lisa.Boutaleb@gmail.com"
+              },
+              {
+                "name": "Ilyes",
+                "surname": "Djebbar",
+                "matricule": "313929990021",
+                "email": "Ilyes.Djebbar@gmail.com"
+              },
+              {
+                "name": "Rim",
+                "surname": "Bouzidi",
+                "matricule": "581592544462",
+                "email": "Rim.Bouzidi@gmail.com"
+              },
+              {
+                "name": "Rose",
+                "surname": "Belkadi",
+                "matricule": "293911167749",
+                "email": "Rose.Belkadi@gmail.com"
+              },
+              {
+                "name": "Said",
+                "surname": "Salem",
+                "matricule": "629598493731",
+                "email": "Said.Salem@gmail.com"
+              },
+              {
+                "name": "Khalil",
+                "surname": "Aissani",
+                "matricule": "129138659759",
+                "email": "Khalil.Aissani@gmail.com"
+              },
+              {
+                "name": "Sabrina",
+                "surname": "Bensalem",
+                "matricule": "929553011283",
+                "email": "Sabrina.Bensalem@gmail.com"
+              },
+              {
+                "name": "Fatima",
+                "surname": "Allali",
+                "matricule": "812739215353",
+                "email": "Fatima.Allali@gmail.com"
+              },
+              {
+                "name": "Imene",
+                "surname": "Laribi",
+                "matricule": "772951010253",
+                "email": "Imene.Laribi@gmail.com"
+              },
+              {
+                "name": "Salim",
+                "surname": "Fares",
+                "matricule": "160317787928",
+                "email": "Salim.Fares@gmail.com"
+              },
+              {
+                "name": "Sonia",
+                "surname": "Boukhari",
+                "matricule": "225107202082",
+                "email": "Sonia.Boukhari@gmail.com"
+              },
+              {
+                "name": "Fares",
+                "surname": "Selami",
+                "matricule": "444651579885",
+                "email": "Fares.Selami@gmail.com"
+              },
+              {
+                "name": "Soumia",
+                "surname": "Khelil",
+                "matricule": "992042456394",
+                "email": "Soumia.Khelil@gmail.com"
+              },
+              {
+                "name": "Wafae",
+                "surname": "Hachemi",
+                "matricule": "857471835039",
+                "email": "Wafae.Hachemi@gmail.com"
+              },
+              {
+                "name": "Mustapha",
+                "surname": "Khelifi",
+                "matricule": "114167190206",
+                "email": "Mustapha.Khelifi@gmail.com"
+              },
+              {
+                "name": "Sonia",
+                "surname": "Kadri",
+                "matricule": "500828823395",
+                "email": "Sonia.Kadri@gmail.com"
+              },
+              {
+                "name": "Lydia",
+                "surname": "Meziani",
+                "matricule": "325855397598",
+                "email": "Lydia.Meziani@gmail.com"
+              },
+              {
+                "name": "Massinissa",
+                "surname": "Amrane",
+                "matricule": "957296332984",
+                "email": "Massinissa.Amrane@gmail.com"
+              },
+              {
+                "name": "Lilia",
+                "surname": "Mokadem",
+                "matricule": "866907961863",
+                "email": "Lilia.Mokadem@gmail.com"
+              },
+              {
+                "name": "Hamza",
+                "surname": "Haddouche",
+                "matricule": "308260538041",
+                "email": "Hamza.Haddouche@gmail.com"
+              },
+              {
+                "name": "Chabane",
+                "surname": "Yahiaoui",
+                "matricule": "881308800709",
+                "email": "Chabane.Yahiaoui@gmail.com"
+              },
+              {
+                "name": "Farah",
+                "surname": "Seddiki",
+                "matricule": "993021362128",
+                "email": "Farah.Seddiki@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Said",
+                "matricule": "187407280017",
+                "email": "Amel.Said@gmail.com"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "groups": [
+          {
+            "number": 1,
+            "students": [
+              {
+                "name": "Sabrina",
+                "surname": "Guendouz",
+                "matricule": "185437897424",
+                "email": "Sabrina.Guendouz@gmail.com"
+              },
+              {
+                "name": "Mustapha",
+                "surname": "Amari",
+                "matricule": "403304772900",
+                "email": "Mustapha.Amari@gmail.com"
+              },
+              {
+                "name": "Hamza",
+                "surname": "Bouguerra",
+                "matricule": "794986436354",
+                "email": "Hamza.Bouguerra@gmail.com"
+              },
+              {
+                "name": "Salima",
+                "surname": "Belkacem",
+                "matricule": "934280821065",
+                "email": "Salima.Belkacem@gmail.com"
+              },
+              {
+                "name": "Salma",
+                "surname": "Kadi",
+                "matricule": "538819717918",
+                "email": "Salma.Kadi@gmail.com"
+              },
+              {
+                "name": "Farouk",
+                "surname": "Bouchareb",
+                "matricule": "491173595594",
+                "email": "Farouk.Bouchareb@gmail.com"
+              },
+              {
+                "name": "Mustapha",
+                "surname": "Haddouche",
+                "matricule": "683518937336",
+                "email": "Mustapha.Haddouche@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Belkhiri",
+                "matricule": "372026080860",
+                "email": "Amel.Belkhiri@gmail.com"
+              },
+              {
+                "name": "Omar",
+                "surname": "Chaoui",
+                "matricule": "629307729046",
+                "email": "Omar.Chaoui@gmail.com"
+              },
+              {
+                "name": "Sofiane",
+                "surname": "Berkani",
+                "matricule": "757137446560",
+                "email": "Sofiane.Berkani@gmail.com"
+              },
+              {
+                "name": "Lotfi",
+                "surname": "Benali",
+                "matricule": "195542137708",
+                "email": "Lotfi.Benali@gmail.com"
+              },
+              {
+                "name": "Ikram",
+                "surname": "Benameur",
+                "matricule": "673572824765",
+                "email": "Ikram.Benameur@gmail.com"
+              },
+              {
+                "name": "Nadir",
+                "surname": "Mazouz",
+                "matricule": "663552428870",
+                "email": "Nadir.Mazouz@gmail.com"
+              },
+              {
+                "name": "Bouchra",
+                "surname": "Allal",
+                "matricule": "798450172849",
+                "email": "Bouchra.Allal@gmail.com"
+              },
+              {
+                "name": "Mohand",
+                "surname": "Benyahia",
+                "matricule": "412676596326",
+                "email": "Mohand.Benyahia@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Benyoucef",
+                "matricule": "232440371200",
+                "email": "Sami.Benyoucef@gmail.com"
+              },
+              {
+                "name": "Younes",
+                "surname": "Belaidi",
+                "matricule": "488601924600",
+                "email": "Younes.Belaidi@gmail.com"
+              },
+              {
+                "name": "Jasmine",
+                "surname": "Allali",
+                "matricule": "467841448542",
+                "email": "Jasmine.Allali@gmail.com"
+              },
+              {
+                "name": "Fares",
+                "surname": "Boukhatem",
+                "matricule": "235823501930",
+                "email": "Fares.Boukhatem@gmail.com"
+              },
+              {
+                "name": "Youba",
+                "surname": "Sayah",
+                "matricule": "494362737799",
+                "email": "Youba.Sayah@gmail.com"
+              },
+              {
+                "name": "Oussama",
+                "surname": "Chellaoua",
+                "matricule": "206366984428",
+                "email": "Oussama.Chellaoua@gmail.com"
+              },
+              {
+                "name": "Safia",
+                "surname": "Ouchene",
+                "matricule": "640193159172",
+                "email": "Safia.Ouchene@gmail.com"
+              },
+              {
+                "name": "Ouanes",
+                "surname": "Salem",
+                "matricule": "454466389950",
+                "email": "Ouanes.Salem@gmail.com"
+              },
+              {
+                "name": "Hania",
+                "surname": "Abdelli",
+                "matricule": "868278495939",
+                "email": "Hania.Abdelli@gmail.com"
+              },
+              {
+                "name": "Soumia",
+                "surname": "Benaissa",
+                "matricule": "579670032379",
+                "email": "Soumia.Benaissa@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "students": [
+              {
+                "name": "Nesrine",
+                "surname": "Zeroual",
+                "matricule": "882480217589",
+                "email": "Nesrine.Zeroual@gmail.com"
+              },
+              {
+                "name": "Lisa",
+                "surname": "Hamdani",
+                "matricule": "523854608388",
+                "email": "Lisa.Hamdani@gmail.com"
+              },
+              {
+                "name": "Samira",
+                "surname": "Khaled",
+                "matricule": "145807070664",
+                "email": "Samira.Khaled@gmail.com"
+              },
+              {
+                "name": "Myriam",
+                "surname": "Merabet",
+                "matricule": "426497451777",
+                "email": "Myriam.Merabet@gmail.com"
+              },
+              {
+                "name": "Abderrahmane",
+                "surname": "Abouda",
+                "matricule": "420692299523",
+                "email": "Abderrahmane.Abouda@gmail.com"
+              },
+              {
+                "name": "Sarah",
+                "surname": "Daoud",
+                "matricule": "973065411584",
+                "email": "Sarah.Daoud@gmail.com"
+              },
+              {
+                "name": "Lilia",
+                "surname": "Rahmani",
+                "matricule": "237895397650",
+                "email": "Lilia.Rahmani@gmail.com"
+              },
+              {
+                "name": "Aya",
+                "surname": "Moulay",
+                "matricule": "958935375919",
+                "email": "Aya.Moulay@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Allali",
+                "matricule": "571186259586",
+                "email": "Anissa.Allali@gmail.com"
+              },
+              {
+                "name": "Taha",
+                "surname": "Ziane",
+                "matricule": "100031497039",
+                "email": "Taha.Ziane@gmail.com"
+              },
+              {
+                "name": "Khaled",
+                "surname": "Ferhat",
+                "matricule": "404879736996",
+                "email": "Khaled.Ferhat@gmail.com"
+              },
+              {
+                "name": "Rida",
+                "surname": "Boudjemaa",
+                "matricule": "177930873474",
+                "email": "Rida.Boudjemaa@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Rabia",
+                "matricule": "349474711913",
+                "email": "Lyna.Rabia@gmail.com"
+              },
+              {
+                "name": "Maria",
+                "surname": "Mohammedi",
+                "matricule": "547271755252",
+                "email": "Maria.Mohammedi@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Sahraoui",
+                "matricule": "145557013881",
+                "email": "Hocine.Sahraoui@gmail.com"
+              },
+              {
+                "name": "Soumia",
+                "surname": "Bakhti",
+                "matricule": "474173554853",
+                "email": "Soumia.Bakhti@gmail.com"
+              },
+              {
+                "name": "Dalia",
+                "surname": "Aribi",
+                "matricule": "747081471459",
+                "email": "Dalia.Aribi@gmail.com"
+              },
+              {
+                "name": "Ryma",
+                "surname": "Salmi",
+                "matricule": "779815716452",
+                "email": "Ryma.Salmi@gmail.com"
+              },
+              {
+                "name": "Zineb",
+                "surname": "Belkhiri",
+                "matricule": "745432543074",
+                "email": "Zineb.Belkhiri@gmail.com"
+              },
+              {
+                "name": "Hamza",
+                "surname": "Hamadouche",
+                "matricule": "156877854290",
+                "email": "Hamza.Hamadouche@gmail.com"
+              },
+              {
+                "name": "Hayat",
+                "surname": "Messaoudi",
+                "matricule": "236808031190",
+                "email": "Hayat.Messaoudi@gmail.com"
+              },
+              {
+                "name": "Younes",
+                "surname": "Hamdi",
+                "matricule": "298263539310",
+                "email": "Younes.Hamdi@gmail.com"
+              },
+              {
+                "name": "Farid",
+                "surname": "Cheikh",
+                "matricule": "921785396208",
+                "email": "Farid.Cheikh@gmail.com"
+              },
+              {
+                "name": "Dounia",
+                "surname": "Chellaoua",
+                "matricule": "340591682443",
+                "email": "Dounia.Chellaoua@gmail.com"
+              },
+              {
+                "name": "Rida",
+                "surname": "Boukhari",
+                "matricule": "332571995964",
+                "email": "Rida.Boukhari@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "students": [
+              {
+                "name": "Nazim",
+                "surname": "Henni",
+                "matricule": "734365944780",
+                "email": "Nazim.Henni@gmail.com"
+              },
+              {
+                "name": "Abdelatif",
+                "surname": "Nasri",
+                "matricule": "624006016093",
+                "email": "Abdelatif.Nasri@gmail.com"
+              },
+              {
+                "name": "Rachid",
+                "surname": "Mansour",
+                "matricule": "592322785525",
+                "email": "Rachid.Mansour@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Benaouda",
+                "matricule": "777115899260",
+                "email": "Anissa.Benaouda@gmail.com"
+              },
+              {
+                "name": "Ouanes",
+                "surname": "Saad",
+                "matricule": "514654931334",
+                "email": "Ouanes.Saad@gmail.com"
+              },
+              {
+                "name": "Salima",
+                "surname": "Mazouzi",
+                "matricule": "133845505941",
+                "email": "Salima.Mazouzi@gmail.com"
+              },
+              {
+                "name": "Anis",
+                "surname": "Djellouli",
+                "matricule": "645828787391",
+                "email": "Anis.Djellouli@gmail.com"
+              },
+              {
+                "name": "Salima",
+                "surname": "Salhi",
+                "matricule": "947648355303",
+                "email": "Salima.Salhi@gmail.com"
+              },
+              {
+                "name": "Youba",
+                "surname": "Miloudi",
+                "matricule": "215924734999",
+                "email": "Youba.Miloudi@gmail.com"
+              },
+              {
+                "name": "Ouanes",
+                "surname": "Chabane",
+                "matricule": "729170271362",
+                "email": "Ouanes.Chabane@gmail.com"
+              },
+              {
+                "name": "Farid",
+                "surname": "Saidani",
+                "matricule": "911472409717",
+                "email": "Farid.Saidani@gmail.com"
+              },
+              {
+                "name": "Maria",
+                "surname": "Benyoucef",
+                "matricule": "278684009096",
+                "email": "Maria.Benyoucef@gmail.com"
+              },
+              {
+                "name": "Ramzi",
+                "surname": "Yahiaoui",
+                "matricule": "116509731493",
+                "email": "Ramzi.Yahiaoui@gmail.com"
+              },
+              {
+                "name": "Rania",
+                "surname": "Brahimi",
+                "matricule": "341946562612",
+                "email": "Rania.Brahimi@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Toumi",
+                "matricule": "571150343132",
+                "email": "Mounir.Toumi@gmail.com"
+              },
+              {
+                "name": "Amani",
+                "surname": "Belkhiri",
+                "matricule": "866884426187",
+                "email": "Amani.Belkhiri@gmail.com"
+              },
+              {
+                "name": "Yasser",
+                "surname": "Berkani",
+                "matricule": "873597417608",
+                "email": "Yasser.Berkani@gmail.com"
+              },
+              {
+                "name": "Youcef",
+                "surname": "Belkheir",
+                "matricule": "819102723093",
+                "email": "Youcef.Belkheir@gmail.com"
+              },
+              {
+                "name": "Fodil",
+                "surname": "Hamdani",
+                "matricule": "204438011738",
+                "email": "Fodil.Hamdani@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Hamza",
+                "matricule": "269405346232",
+                "email": "Anissa.Hamza@gmail.com"
+              },
+              {
+                "name": "Zakaria",
+                "surname": "Bouguerra",
+                "matricule": "277262703338",
+                "email": "Zakaria.Bouguerra@gmail.com"
+              },
+              {
+                "name": "Nassim",
+                "surname": "Benyamina",
+                "matricule": "143746488483",
+                "email": "Nassim.Benyamina@gmail.com"
+              },
+              {
+                "name": "Nour",
+                "surname": "Gharbi",
+                "matricule": "769281693998",
+                "email": "Nour.Gharbi@gmail.com"
+              },
+              {
+                "name": "Salima",
+                "surname": "Abdou",
+                "matricule": "346483916135",
+                "email": "Salima.Abdou@gmail.com"
+              },
+              {
+                "name": "Safia",
+                "surname": "Bouchama",
+                "matricule": "304314783667",
+                "email": "Safia.Bouchama@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "students": [
+              {
+                "name": "Imene",
+                "surname": "Aboukir",
+                "matricule": "452312225037",
+                "email": "Imene.Aboukir@gmail.com"
+              },
+              {
+                "name": "Rida",
+                "surname": "Kamel",
+                "matricule": "551884434519",
+                "email": "Rida.Kamel@gmail.com"
+              },
+              {
+                "name": "Youba",
+                "surname": "Naili",
+                "matricule": "825622711092",
+                "email": "Youba.Naili@gmail.com"
+              },
+              {
+                "name": "Nadir",
+                "surname": "Soltani",
+                "matricule": "272746832515",
+                "email": "Nadir.Soltani@gmail.com"
+              },
+              {
+                "name": "Maya",
+                "surname": "Smail",
+                "matricule": "773683470955",
+                "email": "Maya.Smail@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Djoudi",
+                "matricule": "670658959021",
+                "email": "Houda.Djoudi@gmail.com"
+              },
+              {
+                "name": "Maya",
+                "surname": "Bacha",
+                "matricule": "779866709421",
+                "email": "Maya.Bacha@gmail.com"
+              },
+              {
+                "name": "Zineb",
+                "surname": "Moussa",
+                "matricule": "181589325230",
+                "email": "Zineb.Moussa@gmail.com"
+              },
+              {
+                "name": "Amine",
+                "surname": "Abbas",
+                "matricule": "152806812746",
+                "email": "Amine.Abbas@gmail.com"
+              },
+              {
+                "name": "Lisa",
+                "surname": "Bettahar",
+                "matricule": "708755972596",
+                "email": "Lisa.Bettahar@gmail.com"
+              },
+              {
+                "name": "Fodil",
+                "surname": "Bahloul",
+                "matricule": "100365428344",
+                "email": "Fodil.Bahloul@gmail.com"
+              },
+              {
+                "name": "Amani",
+                "surname": "Moussa",
+                "matricule": "687524014601",
+                "email": "Amani.Moussa@gmail.com"
+              },
+              {
+                "name": "Sahra",
+                "surname": "Touati",
+                "matricule": "206973949741",
+                "email": "Sahra.Touati@gmail.com"
+              },
+              {
+                "name": "Zina",
+                "surname": "Mansouri",
+                "matricule": "773937064730",
+                "email": "Zina.Mansouri@gmail.com"
+              },
+              {
+                "name": "Ikram",
+                "surname": "Chabane",
+                "matricule": "504261870896",
+                "email": "Ikram.Chabane@gmail.com"
+              },
+              {
+                "name": "Walid",
+                "surname": "Bouabdellah",
+                "matricule": "652926596195",
+                "email": "Walid.Bouabdellah@gmail.com"
+              },
+              {
+                "name": "Farid",
+                "surname": "Cheriet",
+                "matricule": "467436778053",
+                "email": "Farid.Cheriet@gmail.com"
+              },
+              {
+                "name": "Feriel",
+                "surname": "Nacer",
+                "matricule": "660013289127",
+                "email": "Feriel.Nacer@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Aissaoui",
+                "matricule": "834271422475",
+                "email": "Sami.Aissaoui@gmail.com"
+              },
+              {
+                "name": "Manel",
+                "surname": "Amrani",
+                "matricule": "615055729290",
+                "email": "Manel.Amrani@gmail.com"
+              },
+              {
+                "name": "Nacer",
+                "surname": "Zerrouki",
+                "matricule": "680500477785",
+                "email": "Nacer.Zerrouki@gmail.com"
+              },
+              {
+                "name": "Amira",
+                "surname": "Nasri",
+                "matricule": "585970133211",
+                "email": "Amira.Nasri@gmail.com"
+              },
+              {
+                "name": "Salah",
+                "surname": "Belaid",
+                "matricule": "910314415083",
+                "email": "Salah.Belaid@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Aboukir",
+                "matricule": "724058209801",
+                "email": "Amel.Aboukir@gmail.com"
+              },
+              {
+                "name": "Salim",
+                "surname": "Seddiki",
+                "matricule": "399961178725",
+                "email": "Salim.Seddiki@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "students": [
+              {
+                "name": "Moussa",
+                "surname": "Derradji",
+                "matricule": "913042641871",
+                "email": "Moussa.Derradji@gmail.com"
+              },
+              {
+                "name": "Zina",
+                "surname": "Diaf",
+                "matricule": "966523647784",
+                "email": "Zina.Diaf@gmail.com"
+              },
+              {
+                "name": "Myriam",
+                "surname": "Zidane",
+                "matricule": "132659096968",
+                "email": "Myriam.Zidane@gmail.com"
+              },
+              {
+                "name": "Lina",
+                "surname": "Smail",
+                "matricule": "882427743162",
+                "email": "Lina.Smail@gmail.com"
+              },
+              {
+                "name": "Aymen",
+                "surname": "Kara",
+                "matricule": "524104105059",
+                "email": "Aymen.Kara@gmail.com"
+              },
+              {
+                "name": "Fouzia",
+                "surname": "Benaissa",
+                "matricule": "111330821866",
+                "email": "Fouzia.Benaissa@gmail.com"
+              },
+              {
+                "name": "Youcef",
+                "surname": "Benmoussa",
+                "matricule": "513366310969",
+                "email": "Youcef.Benmoussa@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Chibani",
+                "matricule": "763102365809",
+                "email": "Lyna.Chibani@gmail.com"
+              },
+              {
+                "name": "Nassim",
+                "surname": "Merzoug",
+                "matricule": "868297399881",
+                "email": "Nassim.Merzoug@gmail.com"
+              },
+              {
+                "name": "Fella",
+                "surname": "Saidi",
+                "matricule": "210625707823",
+                "email": "Fella.Saidi@gmail.com"
+              },
+              {
+                "name": "Soufiane",
+                "surname": "Abdelaziz",
+                "matricule": "987262602979",
+                "email": "Soufiane.Abdelaziz@gmail.com"
+              },
+              {
+                "name": "Sofia",
+                "surname": "Mokadem",
+                "matricule": "960978121907",
+                "email": "Sofia.Mokadem@gmail.com"
+              },
+              {
+                "name": "Salma",
+                "surname": "Djebbar",
+                "matricule": "964168137069",
+                "email": "Salma.Djebbar@gmail.com"
+              },
+              {
+                "name": "Rochdi",
+                "surname": "Arab",
+                "matricule": "221935319491",
+                "email": "Rochdi.Arab@gmail.com"
+              },
+              {
+                "name": "Asma",
+                "surname": "Khaled",
+                "matricule": "556796891149",
+                "email": "Asma.Khaled@gmail.com"
+              },
+              {
+                "name": "Nihad",
+                "surname": "Chaoui",
+                "matricule": "155898058109",
+                "email": "Nihad.Chaoui@gmail.com"
+              },
+              {
+                "name": "Soufiane",
+                "surname": "Kebaili",
+                "matricule": "895045465495",
+                "email": "Soufiane.Kebaili@gmail.com"
+              },
+              {
+                "name": "Nacer",
+                "surname": "Zeroual",
+                "matricule": "193421959515",
+                "email": "Nacer.Zeroual@gmail.com"
+              },
+              {
+                "name": "Nour",
+                "surname": "Belarbi",
+                "matricule": "449979703209",
+                "email": "Nour.Belarbi@gmail.com"
+              },
+              {
+                "name": "Adam",
+                "surname": "Rahmani",
+                "matricule": "825520930084",
+                "email": "Adam.Rahmani@gmail.com"
+              },
+              {
+                "name": "Ferhat",
+                "surname": "Achouri",
+                "matricule": "943980886068",
+                "email": "Ferhat.Achouri@gmail.com"
+              },
+              {
+                "name": "Mehdi",
+                "surname": "Brahimi",
+                "matricule": "718139225239",
+                "email": "Mehdi.Brahimi@gmail.com"
+              },
+              {
+                "name": "Nadia",
+                "surname": "Touil",
+                "matricule": "693492468730",
+                "email": "Nadia.Touil@gmail.com"
+              },
+              {
+                "name": "Hamid",
+                "surname": "Latreche",
+                "matricule": "146492293746",
+                "email": "Hamid.Latreche@gmail.com"
+              },
+              {
+                "name": "Younes",
+                "surname": "Ouchene",
+                "matricule": "550899460102",
+                "email": "Younes.Ouchene@gmail.com"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "groups": [
+          {
+            "number": 1,
+            "students": [
+              {
+                "name": "Chanez",
+                "surname": "Salah",
+                "matricule": "952224303151",
+                "email": "Chanez.Salah@gmail.com"
+              },
+              {
+                "name": "Maya",
+                "surname": "Attia",
+                "matricule": "436861685270",
+                "email": "Maya.Attia@gmail.com"
+              },
+              {
+                "name": "Fatteh",
+                "surname": "Cheriet",
+                "matricule": "701959187027",
+                "email": "Fatteh.Cheriet@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Baghdadi",
+                "matricule": "784825167794",
+                "email": "Houda.Baghdadi@gmail.com"
+              },
+              {
+                "name": "Aya",
+                "surname": "Mostefaoui",
+                "matricule": "700034958148",
+                "email": "Aya.Mostefaoui@gmail.com"
+              },
+              {
+                "name": "Nadir",
+                "surname": "Ramdani",
+                "matricule": "563380620276",
+                "email": "Nadir.Ramdani@gmail.com"
+              },
+              {
+                "name": "Racha",
+                "surname": "Lamri",
+                "matricule": "272809092144",
+                "email": "Racha.Lamri@gmail.com"
+              },
+              {
+                "name": "C\u00e9lia",
+                "surname": "Charef",
+                "matricule": "999104126542",
+                "email": "C\u00e9lia.Charef@gmail.com"
+              },
+              {
+                "name": "Mourad",
+                "surname": "Hocine",
+                "matricule": "662861353331",
+                "email": "Mourad.Hocine@gmail.com"
+              },
+              {
+                "name": "Yousra",
+                "surname": "Bouguerra",
+                "matricule": "269780699333",
+                "email": "Yousra.Bouguerra@gmail.com"
+              },
+              {
+                "name": "Rabah",
+                "surname": "Bouguerra",
+                "matricule": "559809482143",
+                "email": "Rabah.Bouguerra@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Touati",
+                "matricule": "860387048340",
+                "email": "Anissa.Touati@gmail.com"
+              },
+              {
+                "name": "Lydia",
+                "surname": "Bouzid",
+                "matricule": "698893329047",
+                "email": "Lydia.Bouzid@gmail.com"
+              },
+              {
+                "name": "Nassim",
+                "surname": "Rachedi",
+                "matricule": "411250518544",
+                "email": "Nassim.Rachedi@gmail.com"
+              },
+              {
+                "name": "Narimane",
+                "surname": "Rachedi",
+                "matricule": "393290408575",
+                "email": "Narimane.Rachedi@gmail.com"
+              },
+              {
+                "name": "Ferhat",
+                "surname": "Haddouche",
+                "matricule": "811288977975",
+                "email": "Ferhat.Haddouche@gmail.com"
+              },
+              {
+                "name": "Malik",
+                "surname": "Bouafia",
+                "matricule": "334333328887",
+                "email": "Malik.Bouafia@gmail.com"
+              },
+              {
+                "name": "Rida",
+                "surname": "Abbassi",
+                "matricule": "805501366704",
+                "email": "Rida.Abbassi@gmail.com"
+              },
+              {
+                "name": "Chiraz",
+                "surname": "Mokhtari",
+                "matricule": "928423530149",
+                "email": "Chiraz.Mokhtari@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Sahraoui",
+                "matricule": "877843140065",
+                "email": "Mounir.Sahraoui@gmail.com"
+              },
+              {
+                "name": "Nedjma",
+                "surname": "Sayah",
+                "matricule": "284871408740",
+                "email": "Nedjma.Sayah@gmail.com"
+              },
+              {
+                "name": "Houcine",
+                "surname": "Zitouni",
+                "matricule": "503703023225",
+                "email": "Houcine.Zitouni@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Laouar",
+                "matricule": "731642491967",
+                "email": "Lyna.Laouar@gmail.com"
+              },
+              {
+                "name": "Abdelkader",
+                "surname": "Abdou",
+                "matricule": "444617424639",
+                "email": "Abdelkader.Abdou@gmail.com"
+              },
+              {
+                "name": "Nadir",
+                "surname": "Hamzaoui",
+                "matricule": "900006476987",
+                "email": "Nadir.Hamzaoui@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "students": [
+              {
+                "name": "Amani",
+                "surname": "Said",
+                "matricule": "100931284548",
+                "email": "Amani.Said@gmail.com"
+              },
+              {
+                "name": "Sabrina",
+                "surname": "Tabet",
+                "matricule": "826378309621",
+                "email": "Sabrina.Tabet@gmail.com"
+              },
+              {
+                "name": "Thinhinane",
+                "surname": "Khelifa",
+                "matricule": "301322932058",
+                "email": "Thinhinane.Khelifa@gmail.com"
+              },
+              {
+                "name": "Houcine",
+                "surname": "Meddah",
+                "matricule": "872959721988",
+                "email": "Houcine.Meddah@gmail.com"
+              },
+              {
+                "name": "Nour",
+                "surname": "Abdou",
+                "matricule": "144006927228",
+                "email": "Nour.Abdou@gmail.com"
+              },
+              {
+                "name": "Amine",
+                "surname": "Berkane",
+                "matricule": "712278510528",
+                "email": "Amine.Berkane@gmail.com"
+              },
+              {
+                "name": "Amira",
+                "surname": "Bahloul",
+                "matricule": "114994338506",
+                "email": "Amira.Bahloul@gmail.com"
+              },
+              {
+                "name": "Amani",
+                "surname": "Ikhlef",
+                "matricule": "980519875583",
+                "email": "Amani.Ikhlef@gmail.com"
+              },
+              {
+                "name": "Mouloud",
+                "surname": "Aribi",
+                "matricule": "876338107640",
+                "email": "Mouloud.Aribi@gmail.com"
+              },
+              {
+                "name": "Aya",
+                "surname": "Rabia",
+                "matricule": "766300455383",
+                "email": "Aya.Rabia@gmail.com"
+              },
+              {
+                "name": "Rim",
+                "surname": "Brahimi",
+                "matricule": "248889856162",
+                "email": "Rim.Brahimi@gmail.com"
+              },
+              {
+                "name": "Malak",
+                "surname": "Hamzaoui",
+                "matricule": "223336374066",
+                "email": "Malak.Hamzaoui@gmail.com"
+              },
+              {
+                "name": "Djamel",
+                "surname": "Malki",
+                "matricule": "610603665302",
+                "email": "Djamel.Malki@gmail.com"
+              },
+              {
+                "name": "Anissa",
+                "surname": "Nacer",
+                "matricule": "195386040748",
+                "email": "Anissa.Nacer@gmail.com"
+              },
+              {
+                "name": "Yousra",
+                "surname": "Mokrani",
+                "matricule": "598335928131",
+                "email": "Yousra.Mokrani@gmail.com"
+              },
+              {
+                "name": "Oussama",
+                "surname": "Benaouda",
+                "matricule": "551130509072",
+                "email": "Oussama.Benaouda@gmail.com"
+              },
+              {
+                "name": "Thinhinane",
+                "surname": "Kamel",
+                "matricule": "121216753253",
+                "email": "Thinhinane.Kamel@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Aissaoui",
+                "matricule": "221825940778",
+                "email": "Amel.Aissaoui@gmail.com"
+              },
+              {
+                "name": "Salim",
+                "surname": "Latreche",
+                "matricule": "677788772433",
+                "email": "Salim.Latreche@gmail.com"
+              },
+              {
+                "name": "Mouloud",
+                "surname": "Zerrouki",
+                "matricule": "606719224108",
+                "email": "Mouloud.Zerrouki@gmail.com"
+              },
+              {
+                "name": "Hana",
+                "surname": "Latreche",
+                "matricule": "981725259683",
+                "email": "Hana.Latreche@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Achour",
+                "matricule": "781000944997",
+                "email": "Houda.Achour@gmail.com"
+              },
+              {
+                "name": "Nawal",
+                "surname": "Hamlaoui",
+                "matricule": "975598293018",
+                "email": "Nawal.Hamlaoui@gmail.com"
+              },
+              {
+                "name": "Jasmine",
+                "surname": "Lamri",
+                "matricule": "543249821357",
+                "email": "Jasmine.Lamri@gmail.com"
+              },
+              {
+                "name": "Djamel",
+                "surname": "Belkadi",
+                "matricule": "871622856790",
+                "email": "Djamel.Belkadi@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "students": [
+              {
+                "name": "Lilia",
+                "surname": "Hamadi",
+                "matricule": "642899107557",
+                "email": "Lilia.Hamadi@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Chellaoua",
+                "matricule": "317132391549",
+                "email": "Amel.Chellaoua@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Fares",
+                "matricule": "287934707124",
+                "email": "Sami.Fares@gmail.com"
+              },
+              {
+                "name": "Maria",
+                "surname": "Hadjadj",
+                "matricule": "319871949930",
+                "email": "Maria.Hadjadj@gmail.com"
+              },
+              {
+                "name": "Selma",
+                "surname": "Nouar",
+                "matricule": "138087202049",
+                "email": "Selma.Nouar@gmail.com"
+              },
+              {
+                "name": "M\u00e9lissa",
+                "surname": "Saidi",
+                "matricule": "498175752299",
+                "email": "M\u00e9lissa.Saidi@gmail.com"
+              },
+              {
+                "name": "Khadidja",
+                "surname": "Saoudi",
+                "matricule": "110482852472",
+                "email": "Khadidja.Saoudi@gmail.com"
+              },
+              {
+                "name": "Mira",
+                "surname": "Boukhalfa",
+                "matricule": "809048605808",
+                "email": "Mira.Boukhalfa@gmail.com"
+              },
+              {
+                "name": "Samira",
+                "surname": "Zaidi",
+                "matricule": "956141661933",
+                "email": "Samira.Zaidi@gmail.com"
+              },
+              {
+                "name": "Rida",
+                "surname": "Gharbi",
+                "matricule": "214289083977",
+                "email": "Rida.Gharbi@gmail.com"
+              },
+              {
+                "name": "Ramzi",
+                "surname": "Yahiaoui",
+                "matricule": "783688016440",
+                "email": "Ramzi.Yahiaoui@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Hadji",
+                "matricule": "365633091868",
+                "email": "Hocine.Hadji@gmail.com"
+              },
+              {
+                "name": "Yousra",
+                "surname": "Brahimi",
+                "matricule": "978431071737",
+                "email": "Yousra.Brahimi@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Bencheikh",
+                "matricule": "780644039327",
+                "email": "Sami.Bencheikh@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Rezig",
+                "matricule": "814301185370",
+                "email": "Hocine.Rezig@gmail.com"
+              },
+              {
+                "name": "Manel",
+                "surname": "Berkani",
+                "matricule": "109197149579",
+                "email": "Manel.Berkani@gmail.com"
+              },
+              {
+                "name": "Fodil",
+                "surname": "Hadji",
+                "matricule": "288061965956",
+                "email": "Fodil.Hadji@gmail.com"
+              },
+              {
+                "name": "C\u00e9line",
+                "surname": "Bettahar",
+                "matricule": "437321454313",
+                "email": "C\u00e9line.Bettahar@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Slimani",
+                "matricule": "987615356979",
+                "email": "Amel.Slimani@gmail.com"
+              },
+              {
+                "name": "Mounir",
+                "surname": "Dif",
+                "matricule": "115539303202",
+                "email": "Mounir.Dif@gmail.com"
+              },
+              {
+                "name": "Mohammed",
+                "surname": "Bettahar",
+                "matricule": "384786556476",
+                "email": "Mohammed.Bettahar@gmail.com"
+              },
+              {
+                "name": "Rania",
+                "surname": "Miloudi",
+                "matricule": "900306566413",
+                "email": "Rania.Miloudi@gmail.com"
+              },
+              {
+                "name": "Akram",
+                "surname": "Salmi",
+                "matricule": "130300175364",
+                "email": "Akram.Salmi@gmail.com"
+              },
+              {
+                "name": "Nazim",
+                "surname": "Achour",
+                "matricule": "710951817822",
+                "email": "Nazim.Achour@gmail.com"
+              },
+              {
+                "name": "Ryma",
+                "surname": "Bakhouche",
+                "matricule": "458299620383",
+                "email": "Ryma.Bakhouche@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "students": [
+              {
+                "name": "Aya",
+                "surname": "Bouchama",
+                "matricule": "592407241412",
+                "email": "Aya.Bouchama@gmail.com"
+              },
+              {
+                "name": "Ali",
+                "surname": "Laib",
+                "matricule": "769724783992",
+                "email": "Ali.Laib@gmail.com"
+              },
+              {
+                "name": "Khalil",
+                "surname": "Benyoucef",
+                "matricule": "365518892970",
+                "email": "Khalil.Benyoucef@gmail.com"
+              },
+              {
+                "name": "Malik",
+                "surname": "Belaidi",
+                "matricule": "304176015609",
+                "email": "Malik.Belaidi@gmail.com"
+              },
+              {
+                "name": "Nacer",
+                "surname": "Attia",
+                "matricule": "458298435534",
+                "email": "Nacer.Attia@gmail.com"
+              },
+              {
+                "name": "Kahina",
+                "surname": "Ouali",
+                "matricule": "313324490205",
+                "email": "Kahina.Ouali@gmail.com"
+              },
+              {
+                "name": "Mina",
+                "surname": "Bahri",
+                "matricule": "958545352665",
+                "email": "Mina.Bahri@gmail.com"
+              },
+              {
+                "name": "Abderaouf",
+                "surname": "Sabri",
+                "matricule": "733822478107",
+                "email": "Abderaouf.Sabri@gmail.com"
+              },
+              {
+                "name": "Mira",
+                "surname": "Yousfi",
+                "matricule": "877785314641",
+                "email": "Mira.Yousfi@gmail.com"
+              },
+              {
+                "name": "Fatima",
+                "surname": "Bakhti",
+                "matricule": "384987435360",
+                "email": "Fatima.Bakhti@gmail.com"
+              },
+              {
+                "name": "Houda",
+                "surname": "Saoudi",
+                "matricule": "976169235988",
+                "email": "Houda.Saoudi@gmail.com"
+              },
+              {
+                "name": "Mohand",
+                "surname": "Touati",
+                "matricule": "303761501712",
+                "email": "Mohand.Touati@gmail.com"
+              },
+              {
+                "name": "Hamza",
+                "surname": "Ramdani",
+                "matricule": "172970110106",
+                "email": "Hamza.Ramdani@gmail.com"
+              },
+              {
+                "name": "Lila",
+                "surname": "Djellal",
+                "matricule": "115198157701",
+                "email": "Lila.Djellal@gmail.com"
+              },
+              {
+                "name": "Lyna",
+                "surname": "Lamri",
+                "matricule": "991457941733",
+                "email": "Lyna.Lamri@gmail.com"
+              },
+              {
+                "name": "Amel",
+                "surname": "Bakhouche",
+                "matricule": "437495064350",
+                "email": "Amel.Bakhouche@gmail.com"
+              },
+              {
+                "name": "Samira",
+                "surname": "Merabet",
+                "matricule": "926893032174",
+                "email": "Samira.Merabet@gmail.com"
+              },
+              {
+                "name": "Walid",
+                "surname": "Gharbi",
+                "matricule": "340452701859",
+                "email": "Walid.Gharbi@gmail.com"
+              },
+              {
+                "name": "Aladin",
+                "surname": "Diaf",
+                "matricule": "319693278649",
+                "email": "Aladin.Diaf@gmail.com"
+              },
+              {
+                "name": "Nadia",
+                "surname": "Bouguerra",
+                "matricule": "202564991937",
+                "email": "Nadia.Bouguerra@gmail.com"
+              },
+              {
+                "name": "Ana\u00efs",
+                "surname": "Fellah",
+                "matricule": "188589973492",
+                "email": "Ana\u00efs.Fellah@gmail.com"
+              },
+              {
+                "name": "Fares",
+                "surname": "Belkacemi",
+                "matricule": "999072467855",
+                "email": "Fares.Belkacemi@gmail.com"
+              },
+              {
+                "name": "Hamid",
+                "surname": "Rahmoune",
+                "matricule": "425519981680",
+                "email": "Hamid.Rahmoune@gmail.com"
+              },
+              {
+                "name": "Hamid",
+                "surname": "Mansouri",
+                "matricule": "669264460986",
+                "email": "Hamid.Mansouri@gmail.com"
+              },
+              {
+                "name": "Youcef",
+                "surname": "Belkacem",
+                "matricule": "577646467416",
+                "email": "Youcef.Belkacem@gmail.com"
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "students": [
+              {
+                "name": "Fatima",
+                "surname": "Bounab",
+                "matricule": "953248485770",
+                "email": "Fatima.Bounab@gmail.com"
+              },
+              {
+                "name": "Ouanes",
+                "surname": "Benamar",
+                "matricule": "194503792490",
+                "email": "Ouanes.Benamar@gmail.com"
+              },
+              {
+                "name": "Mohammed",
+                "surname": "Bouchama",
+                "matricule": "263802399641",
+                "email": "Mohammed.Bouchama@gmail.com"
+              },
+              {
+                "name": "Arezki",
+                "surname": "Mecheri",
+                "matricule": "832490838590",
+                "email": "Arezki.Mecheri@gmail.com"
+              },
+              {
+                "name": "Yasser",
+                "surname": "Chaoui",
+                "matricule": "369548032458",
+                "email": "Yasser.Chaoui@gmail.com"
+              },
+              {
+                "name": "Farouk",
+                "surname": "Boudiaf",
+                "matricule": "856018702047",
+                "email": "Farouk.Boudiaf@gmail.com"
+              },
+              {
+                "name": "Rachid",
+                "surname": "Bouaziz",
+                "matricule": "590626566858",
+                "email": "Rachid.Bouaziz@gmail.com"
+              },
+              {
+                "name": "Adel",
+                "surname": "Tabet",
+                "matricule": "213716080028",
+                "email": "Adel.Tabet@gmail.com"
+              },
+              {
+                "name": "Sophia",
+                "surname": "Boudraa",
+                "matricule": "858679118470",
+                "email": "Sophia.Boudraa@gmail.com"
+              },
+              {
+                "name": "Khaled",
+                "surname": "Khelif",
+                "matricule": "342090488806",
+                "email": "Khaled.Khelif@gmail.com"
+              },
+              {
+                "name": "Jasmine",
+                "surname": "Sabri",
+                "matricule": "411379505078",
+                "email": "Jasmine.Sabri@gmail.com"
+              },
+              {
+                "name": "Sabrina",
+                "surname": "Naili",
+                "matricule": "840179037460",
+                "email": "Sabrina.Naili@gmail.com"
+              },
+              {
+                "name": "Hocine",
+                "surname": "Touati",
+                "matricule": "759057785902",
+                "email": "Hocine.Touati@gmail.com"
+              },
+              {
+                "name": "Akram",
+                "surname": "Achour",
+                "matricule": "462366014234",
+                "email": "Akram.Achour@gmail.com"
+              },
+              {
+                "name": "Salim",
+                "surname": "Bouzid",
+                "matricule": "779162255438",
+                "email": "Salim.Bouzid@gmail.com"
+              },
+              {
+                "name": "Aymen",
+                "surname": "Ammari",
+                "matricule": "143780926635",
+                "email": "Aymen.Ammari@gmail.com"
+              },
+              {
+                "name": "Ouanes",
+                "surname": "Abada",
+                "matricule": "780896518350",
+                "email": "Ouanes.Abada@gmail.com"
+              },
+              {
+                "name": "Rachid",
+                "surname": "Derbal",
+                "matricule": "445957859918",
+                "email": "Rachid.Derbal@gmail.com"
+              },
+              {
+                "name": "Nazim",
+                "surname": "Ziane",
+                "matricule": "125359277760",
+                "email": "Nazim.Ziane@gmail.com"
+              },
+              {
+                "name": "Mouloud",
+                "surname": "Benamar",
+                "matricule": "563867565844",
+                "email": "Mouloud.Benamar@gmail.com"
+              },
+              {
+                "name": "Mehdi",
+                "surname": "Boukhatem",
+                "matricule": "636847267515",
+                "email": "Mehdi.Boukhatem@gmail.com"
+              },
+              {
+                "name": "Sami",
+                "surname": "Mokrani",
+                "matricule": "375183418616",
+                "email": "Sami.Mokrani@gmail.com"
+              },
+              {
+                "name": "Sahra",
+                "surname": "Azizi",
+                "matricule": "668332419859",
+                "email": "Sahra.Azizi@gmail.com"
+              },
+              {
+                "name": "Khadidja",
+                "surname": "Bouziane",
+                "matricule": "526959806423",
+                "email": "Khadidja.Bouziane@gmail.com"
+              },
+              {
+                "name": "Serine",
+                "surname": "Belkadi",
+                "matricule": "803789773942",
+                "email": "Serine.Belkadi@gmail.com"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

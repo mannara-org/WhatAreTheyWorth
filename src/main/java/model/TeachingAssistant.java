@@ -2,9 +2,10 @@ package model;
 
 import orm.Table;
 import orm.Constraints;
-import orm.Constraints.Type;
 
 import java.util.Vector;
+
+import static orm.Constraints.*;
 
 public class TeachingAssistant extends Table {
 
@@ -12,14 +13,14 @@ public class TeachingAssistant extends Table {
         registerModel(TeachingAssistant.class);
     }
 
-    @Constraints(type = Type.TEXT, nullable = false, searchedText = true)
+    @Constraints(type = TEXT, nullable = false, searchedText = true)
     private String surname;
-    @Constraints(type = Type.TEXT, nullable = false, searchedText = true)
+    @Constraints(type = TEXT, nullable = false, searchedText = true)
     private String name;
 
-    @Constraints(type = Type.TEXT, nullable = false, unique = true)
+    @Constraints(type = TEXT, nullable = false, unique = true)
     private String email;
-    @Constraints(type = Type.TEXT, nullable = false, unique = true)
+    @Constraints(type = TEXT, unique = true)
     private String phoneNumber;
 
     public TeachingAssistant() {

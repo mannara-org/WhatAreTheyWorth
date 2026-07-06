@@ -27,7 +27,9 @@ import util.Pair;
 
 import static util.Console.error;
 import static util.Console.print;
+
 import static orm.Reflection.getModelInstance;
+import static orm.Constraints.*;
 
 import static orm.DataMapper.bindValues;
 import static orm.DataMapper.fetchResutls;
@@ -44,7 +46,7 @@ public abstract class Table {
     }
 
     // ID given by the DB, so no setter
-    @Constraints(type = "INTEGER", primaryKey = true)
+    @Constraints(type = INT, primaryKey = true)
     protected Integer id;
 
     public Integer getId() {

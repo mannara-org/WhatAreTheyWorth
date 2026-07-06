@@ -5,6 +5,8 @@
 
 dependency-reduced-pom.xml
 
+__pycache__
+
 target/
 bin/
 

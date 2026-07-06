@@ -14,8 +14,12 @@ import static util.Console.*;
 
 public class Database {
 
-    private static Map<Aggregation,Integer> occurences = new HashMap<>();
+    private static Map<Aggregation, Integer> occurences = new HashMap<>();
     private static String path = "./ressources/samples/";
+
+    public static void readSampleData() {
+
+    }
 
     public static void readSampleData() {
         for (String modelName : readOrderFile()) {
@@ -49,21 +53,23 @@ public class Database {
         boolean success = true;
         for (Table tuple : tuples) {
             success = success && tuple.add() >= 1;
-        } return success;
+        }
+        return success;
     }
 
     public static boolean delete(Vector<? extends Table> tuples) {
         boolean success = true;
         for (Table tuple : tuples) {
             success = success && tuple.delete() >= 1;
-        } return success;
+        }
+        return success;
     }
 
     private static Table getSample(String ofThisModel, String forThisModel) {
 
         var key = new Aggregation(ofThisModel, forThisModel);
         int index = occurences.computeIfAbsent(key, k -> 0);
-        occurences.put(key, index+1);
+        occurences.put(key, index + 1);
 
         return Table.search(ofThisModel).elementAt(index);
     }
@@ -73,7 +79,7 @@ public class Database {
         var parsed = new Vector<Table>();
         var tuples = new JSONArray(readJson(model));
 
-        for (int i=0;i<tuples.length();i++) {
+        for (int i = 0; i < tuples.length(); i++) {
 
             var tuple = tuples.getJSONObject(i);
             var instance = getModelInstance(model);
@@ -82,12 +88,14 @@ public class Database {
                 if (tuple.has(field)) {
                     Object value = tuple.get(field);
                     if (Table.getModelNames().contains(value)) {
-                        value = getSample((String)value, model);
+                        value = getSample((String) value, model);
                     } else if (value instanceof java.math.BigDecimal) {
                         value = ((java.math.BigDecimal) value).doubleValue();
-                    } instance.reflect.fields.callSetter(field, value);
+                    }
+                    instance.reflect.fields.callSetter(field, value);
                 }
-            } parsed.add(instance);
+            }
+            parsed.add(instance);
         }
 
         input(parsed);
@@ -106,7 +114,7 @@ public class Database {
         }
     }
 
-    private static class Aggregation extends Pair<String,String> {
+    private static class Aggregation extends Pair<String, String> {
         Aggregation(String composite, String component) {
             super(composite, component);
         }
