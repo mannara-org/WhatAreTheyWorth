@@ -56,6 +56,6 @@ for specialty_data in SPECIALTIES:
 
 print(f"{specialties=}", end='\n\n')
 
-with open('src/test/resources/samples/specialties.json', 'w') as f:
+with open('src/test/resources/samples/pedagogical_structure.json', 'w') as f:
     json.dump(specialties, f, indent=2)
     pass

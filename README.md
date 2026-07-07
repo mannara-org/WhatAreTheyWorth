@@ -17,6 +17,8 @@ It should also handle test grades and homework. Assiduity should also be a metri
 
 I think all of this can be grouped using dates so a calendar as a primary view seems adequate.
 
+
+
 # Models
 
 Let's take an approach where we start from the obvious and then derive what we need:
@@ -73,7 +75,7 @@ enrollment
 thus yielding the following modelization:
 
 <div align="center">
-	<img src="./media/preliminary_modelization.svg">
+	<img src="./docs/media/preliminary_modelization.svg">
 </div>
 
 # Framework Documentation

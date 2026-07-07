@@ -13,14 +13,26 @@ public class Semester extends Table {
         registerModel(Semester.class);
     }
 
-    public Semester() {
-    }
+    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    private Specialty specialty;
 
     @Constraints(type = INT, nullable = false, foreignKey = true)
     Integer number;
 
+    public Semester() {
+    }
+
     public Integer getNumber() {
         return number;
+    }
+
+    public Specialty getSpecialty() {
+        return specialty;
+    }
+
+    public Semester setSpecialty(Specialty specialty) {
+        this.specialty = specialty;
+        return this;
     }
 
     public Semester setNumber(Integer number) {
