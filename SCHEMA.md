@@ -13,10 +13,12 @@ The selection menu would therefore work in the following order:
 
 - Semester
 - Course
+
 	**Result:** list of groups that the user is responsible for in that specific course/semester!
 
 - Section
 - Group
+
 	**Result:** list of students!
 
 > [!NOTE]
