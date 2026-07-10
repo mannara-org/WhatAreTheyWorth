@@ -1,13 +1,19 @@
 
-# Pedagogical Structure
+This app should be centered and used by a single professor to manage his classes.
 
-## High-Level Schema
+<div align="center">
+	<img src="./media/preliminary_modelization.svg">
+</div>
+
+# ⁠1. Pedagogical Structure
+
+The structure is pretty straightforward. A specialty has sections which is divided in groups. Each group must have a teaching assistant.
 
 <div align="center">
 	<img src="./media/pedagogical_structure.svg">
 </div>
 
-## Student
+## ⁠1.1. Student
 
 | Column       |  Type  | Explanation                                                                  | Nullable |
 | ------------ | :----: | ---------------------------------------------------------------------------- | -------- |
@@ -16,7 +22,8 @@
 | matricule    |  TEXT  | duh                                                                          | NO       |
 | email        |  TEXT  | useful to keep track of                                                      | YES      |
 | **group_id** | **FK** | **the group subsequently point to the section and specialty of the student** | **NO**   |
-## Group
+
+## ⁠1.2. Group
 
 | Column                   | Type   | Explanation                                              | Nullable |
 | ------------------------ | ------ | -------------------------------------------------------- | -------- |
@@ -25,38 +32,36 @@
 | **section_id**           | **FK** | **pointing to the section which just aggregates groups** | **NO**   |
 | **teachingAssistant_id** | **FK** | **each group must have a TA**                            | **NO**   |
 
+## ⁠1.3. Section
 
-```
-Group
-	- number
-	- label ()
-	- specialty (foreign key)
-	- Teaching assistante (foreigh key)
-Specialty
-	- name
-	- cycle
-```
+| Column           | Type    | Explanation                             | Nullable |
+| ---------------- | ------- | --------------------------------------- | -------- |
+| number           | INT     | the section number                      | NO       |
+| **specialty_id** | **INT** | **a specialty is composed of sections** | **NO**   |
 
-Deriving once again:
+## ⁠1.4. Specialty
 
-```
-TA
-	- name
-	- surname
+| Column   | Type | Explanation                                                                | Nullable |
+| -------- | ---- | -------------------------------------------------------------------------- | -------- |
+| name     | TEXT | specialty name e.g. "Intelligence Artificiel" or "Science et Technologies" | NO       |
+| acronyme | TEXT | an abreviation of the name e.g. "AI" or "GL" for "Genie Logiciel"          | NO       |
+| cycle    | TEXT | wether it's a Masters specialty or a Licence one                           | NO       |
 
-	- email
-	- phone number
-```
+## ⁠1.5. Teaching Assistant
 
-we also shouldn't forget about classes. Classes are important they are the thing that the grades depend on.
+| Column      | Type | Explanation | Nullable |
+| ----------- | ---- | ----------- | -------- |
+| name        | TEXT | duh         | NO       |
+| surname     | TEXT | duh         | NO       |
+| email       | TEXT | duh         | NO       |
+| phoneNumber | TEXT | maybe?      | YES      |
 
-```
-course
-	- name
+# ⁠2. Curriculum Structure
 
-enrollment
-	- student (foreign key)
-	- course (foreign key)
-```
+Now this is where things start getting tricky. Each student is enrolled in many courses at the same time which belong to a semester. But there are also students who are retaking courses which do not belong in the semester they are currently studying in.
 
-thus yielding the following modelization:
+Most importantly, how do I know what semester the students are currently in? Where does time live here? Because I need that information to access the courses that they should be enrolled in.
+
+<div align="center">
+	<img src="./media/curriculum_structure.svg">
+</div>
