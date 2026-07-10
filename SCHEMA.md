@@ -19,9 +19,10 @@ The selection menu would therefore work in the following order:
 - Group
 	**Result:** list of students!
 
-
 > [!important] Remark
-since specialties can share courses among them there shouldn't be a separation by specialty.
+> since specialties can share courses among them there shouldn't be a separation by specialty.
+
+let's make a preliminary modelization based off of this workflow.
 
 ## ⁠1. TL;DR Diagram
 
@@ -31,7 +32,7 @@ since specialties can share courses among them there shouldn't be a separation b
 
 # ⁠2. Pedagogical Structure
 
-The structure is pretty straightforward. A specialty has sections which is divided in groups. Each group must have a teaching assistant.
+The structure is pretty straightforward. A specialty has academic levels with sections which are in turn also divided in groups. Each group must have a teaching assistant.
 
 <div align="center">
 	<img src="./media/pedagogical_structure.svg">
@@ -58,12 +59,19 @@ The structure is pretty straightforward. A specialty has sections which is divid
 
 ## ⁠2.3. Section
 
-| Column           | Type    | Explanation                             | Nullable |
-| ---------------- | ------- | --------------------------------------- | -------- |
-| number           | INT     | the section number                      | NO       |
-| **specialty_id** | **INT** | **a specialty is composed of sections** | **NO**   |
+| Column                | Type   | Explanation                                                              | Nullable |
+| --------------------- | ------ | ------------------------------------------------------------------------ | -------- |
+| number                | INT    | the section number                                                       | NO       |
+| **academic_level_id** | **FK** | **each level has different sections for all the students in that level** | **NO**   |
 
-## ⁠2.4. Specialty
+## ⁠2.4. Academic Level
+
+| Column           | Type   | Explanation                                                  | Nullable |
+| ---------------- | ------ | ------------------------------------------------------------ | -------- |
+| number           | INT    | first year, second year, ... (the cycle isn't included here) | **NO**   |
+| **specialty_id** | **FK** | **Each specialty will be divided in have levels (years)**    | **NO**   |
+
+## ⁠2.5. Specialty
 
 | Column   | Type | Explanation                                                                | Nullable |
 | -------- | ---- | -------------------------------------------------------------------------- | -------- |
@@ -71,7 +79,7 @@ The structure is pretty straightforward. A specialty has sections which is divid
 | acronyme | TEXT | an abreviation of the name e.g. "AI" or "GL" for "Genie Logiciel"          | NO       |
 | cycle    | TEXT | wether it's a Masters specialty or a Licence one                           | NO       |
 
-## ⁠2.5. Teaching Assistant
+## ⁠2.6. Teaching Assistant
 
 | Column      | Type | Explanation                                    | Nullable |
 | ----------- | ---- | ---------------------------------------------- | -------- |
@@ -86,24 +94,12 @@ Now this is where things start getting tricky. Each student is enrolled in many 
 
 It would seem at first that we can just enroll student in the courses that belong in the current semester but there are also students who are retaking courses which do not belong in the semester they are currently studying in. So the enrollment can't depend solely on the current semester.
 
-Let's draw this much already:
+A given course isn't specific to one semester either, so we'll need a Many-to-Many table for that too.
+
+Let's draw that much already:
 
 <div align="center">
 	<img src="./media/enrollment_structure.svg">
 </div>
 
-Now a professor should obviously work on the courses within the *current* semester. So we must automatically enroll students in all of the courses of the current semester that they should be enrolled in according to their group's specialty. But for that I must know which academic year and semester they are currently in to be able to enroll them.
-
-The questions we must now answer is: where does time live here? Because I need that information to access the courses that they should be enrolled in. I need to know:
-
-- **What academic year they're currently in:** via a new relation?
-- **Their specialty:** I already have via their group
-
-If I just add a table `academic_level`... or maybe it only needs to be a field within the `student` relation? The problem is that the `group` changes according to the academic level. the truth is that the `academic_level` is already assumed in
-
-<div align="center">
-	<img src="./media/pedagogical_structure.svg">
-</div>
-
-The `section` relation doesn't directly compose the specialty, it's the academic level that gives that to it. How do I model `L1`, `L2`, `L3`, etc...?
-
+Now a professor should obviously work on the courses within the *current* semester. So we must automatically enroll students in all of the courses of the current semester that they should be enrolled in according to their group's specialty and academic level.
