@@ -19,7 +19,7 @@ The selection menu would therefore work in the following order:
 - Group
 	**Result:** list of students!
 
-> [!NOTE] Remark
+> [!NOTE]
 > since specialties can share courses among them there shouldn't be a separation by specialty.
 
 let's make a preliminary modelization based off of this workflow.
