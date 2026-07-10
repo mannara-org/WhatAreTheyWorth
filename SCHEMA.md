@@ -58,7 +58,9 @@ The structure is pretty straightforward. A specialty has sections which is divid
 
 # ⁠2. Curriculum Structure
 
-Now this is where things start getting tricky. Each student is enrolled in many courses at the same time which belong to a semester. But there are also students who are retaking courses which do not belong in the semester they are currently studying in.
+Now this is where things start getting tricky. Each student is enrolled in many courses at the same time which belong to a semester. A specialty's curriculum is defined by the semester that compose the specialty.
+
+It would seem at first that we can just enroll student in the courses that belong in the current semester but there are also students who are retaking courses which do not belong in the semester they are currently studying in.
 
 Most importantly, how do I know what semester the students are currently in? Where does time live here? Because I need that information to access the courses that they should be enrolled in.
 
