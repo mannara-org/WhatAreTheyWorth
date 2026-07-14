@@ -13,9 +13,9 @@ public class Enrollment extends Table {
         registerModel(Enrollment.class);
     }
 
-    @Constraints(type = UNDEFINED, foreignKey = true)
+    @Constraints(type = INT, foreignKey = true, nullable = false)
     private Student student;
-    @Constraints(type = UNDEFINED, foreignKey = true)
+    @Constraints(type = INT, foreignKey = true, nullable = false)
     private Course course;
 
     public Student getStudent() {

@@ -55,7 +55,6 @@ The structure is pretty straightforward. A specialty has academic levels with se
 | Column                   | Type   | Explanation                                              | Nullable |
 | ------------------------ | ------ | -------------------------------------------------------- | -------- |
 | number                   | INT    | group number with the section                            | NO       |
-| label                    | TEXT   | as in GL01 for "Group 01 Genie Logiciel"                 | NO       |
 | **section_id**           | **FK** | **pointing to the section which just aggregates groups** | **NO**   |
 | **teachingAssistant_id** | **FK** | **each group must have a TA**                            | **NO**   |
 
@@ -105,3 +104,27 @@ Let's draw that much already:
 </div>
 
 Now a professor should obviously work on the courses within the *current* semester. So we must automatically enroll students in all of the courses of the current semester that they should be enrolled in according to their group's specialty and academic level.
+
+## 3.1. Enrollment
+
+| Column         | Type   | Explanation                                    | Nullable |
+| -------------- | ------ | ---------------------------------------------- | -------- |
+| **student_id** | **FK** | **student enrolled in the course**             | **NO**   |
+| **course_id**  | **FK** | **course in which the student in enrolled in** | **NO**   |
+## 3.2. Course
+
+
+| Column | Type | Explanation | Nullable |
+| ------ | ---- | ----------- | -------- |
+| name   | TEXT | Course name | NO       |
+
+## 3.3. SemesterCourse
+
+| Column          | Type   | Explanation                             | Nullable |
+| --------------- | ------ | --------------------------------------- | -------- |
+| **course_id**   | **FK** | **course that belong to that semester** | **NO**   |
+| **semester_id** | **FK** | **semester in question**                | **NO**   |
+
+# 4. Grading
+
+Let's not worry about that for now

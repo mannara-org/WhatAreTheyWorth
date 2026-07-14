@@ -13,26 +13,26 @@ public class Section extends Table {
         registerModel(Section.class);
     }
 
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
-    private Specialty specialty;
+    @Constraints(type = INT, nullable = false, foreignKey = true)
+    private AcademicLevel academicLevel;
 
     @Constraints(type = INT, nullable = false)
     private Integer number;
 
-    public Section() {
-    }
-
-    public Section(Specialty specialty, Integer number) {
-        this.specialty = specialty;
+    public Section(AcademicLevel academicLevel, Integer number) {
+        this.academicLevel = academicLevel;
         this.number = number;
     }
 
-    public Specialty getSpecialty() {
-        return specialty;
+    public Section() {
     }
 
-    public Section setSpecialty(Specialty specialty) {
-        this.specialty = specialty;
+    public AcademicLevel getAcademicLevel() {
+        return academicLevel;
+    }
+
+    public Section setAcademicLevel(AcademicLevel academicLevel) {
+        this.academicLevel = academicLevel;
         return this;
     }
 

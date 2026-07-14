@@ -22,6 +22,13 @@ public class Reflection {
         }
     }
 
+    public static void migrateModels() {
+        for (var model : Table.getModels()) {
+            var instance = getModelInstance(model.getSimpleName());
+            instance.migrate();
+        }
+    }
+
     static public FieldInfos fieldsOf(String modelName) {
         if (!Table.hasSubClass(modelName)) {
             String s = "Bad class name: %s";

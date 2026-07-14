@@ -14,9 +14,9 @@ public class Group extends Table {
         registerModel(Group.class);
     }
 
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     private TeachingAssistant teachingAssistant;
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     private Section section;
 
     @Constraints(type = INT, nullable = false)

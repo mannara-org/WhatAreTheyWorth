@@ -13,7 +13,7 @@ public class Semester extends Table {
         registerModel(Semester.class);
     }
 
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     private Specialty specialty;
 
     @Constraints(type = INT, nullable = false, foreignKey = true)

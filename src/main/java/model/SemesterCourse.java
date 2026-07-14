@@ -16,9 +16,9 @@ public class SemesterCourse extends Table {
     public SemesterCourse() {
     }
 
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     Semester semester;
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     Course course;
 
     public Semester getSemester() {

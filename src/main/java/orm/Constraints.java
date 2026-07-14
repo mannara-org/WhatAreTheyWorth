@@ -10,13 +10,20 @@ import java.lang.annotation.ElementType;
 @Target(ElementType.FIELD)
 public @interface Constraints {
 
-    String INT = "INT";
+    // DDL
+
+    String INT = "INTEGER";
     String TEXT = "TEXT";
-    String UNDEFINED = "undefined";
 
     String type();
 
+    boolean foreignKey() default false;
+
+    boolean primaryKey() default false;
+
     boolean nullable() default true; // Nothing can compensate for nullable() except primaryKey of course
+
+    // DML
 
     boolean bounded() default false;
 
@@ -31,8 +38,4 @@ public @interface Constraints {
     boolean enumerated() default false;
 
     boolean unique() default false;
-
-    boolean foreignKey() default false;
-
-    boolean primaryKey() default false;
 }

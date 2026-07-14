@@ -2,6 +2,7 @@ package util;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
@@ -14,18 +15,19 @@ import static util.Console.*;
 
 public class Database {
 
-    private static Map<Aggregation, Integer> occurences = new HashMap<>();
-    private static String path = "./ressources/samples/";
-
-    public static void readSampleData() {
-
-    }
-
-    public static void readSampleData() {
-        for (String modelName : readOrderFile()) {
-            read(modelName);
+    public static Path dataDir() {
+        String override = System.getenv("AUTORENT_DATA_DIR");
+        if (override != null) {
+            return Paths.get(override);
+        } else {
+            throw new BugDetectedException("Please set the AUTORENT_DATA_DIR");
         }
     }
+
+    public static String dbPath = dataDir() + "/WhatAreTheyWorth.db";
+
+    private static Map<Aggregation, Integer> occurences = new HashMap<>();
+    private static String path = "./ressources/samples/";
 
     public static void display() {
         for (String className : Table.getModelNames()) {

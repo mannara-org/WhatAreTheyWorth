@@ -34,15 +34,15 @@ import static orm.Constraints.*;
 import static orm.DataMapper.bindValues;
 import static orm.DataMapper.fetchResutls;
 
-public abstract class Table {
+import static util.Database.dbPath;
 
-    // database path relative to the project's root directory
-    private static String dbPath = "./ressources/databases/AutoRent.db";
+public abstract class Table {
 
     // loading subclasses into the JVM
     private static Set<Class<? extends Table>> models = new HashSet<>();
     static {
-        Reflection.loadModels(new String[] { "Client", "Vehicle", "Reservation", "Return", "Payment", "User" });
+        Reflection.loadModels(new String[] { "AcademicLevel", "Course", "Enrollment", "Group", "Section",
+                "SemesterCourse", "Semester", "Specialty", "Student", "TeachingAssistant" });
     }
 
     // ID given by the DB, so no setter
@@ -147,6 +147,18 @@ public abstract class Table {
         return tuples;
     }
 
+    public void migrate() {
+
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
+                Statement stmt = conn.createStatement();) {
+
+            stmt.execute(query.define.table());
+
+        } catch (SQLException e) {
+            throw new BugDetectedException(e + "\n\nTable creation query:\n\n" + query.define.table());
+        }
+    }
+
     public int add() {
 
         if (!isValid()) {
@@ -217,7 +229,7 @@ public abstract class Table {
             return 0;
         }
 
-        String sql = String.format("DELETE FROM %s WHERE id=?", query.tableName);
+        String sql = String.format("DELETE FROM %s WHERE id=?", query.define.tableName);
         int affected = 0;
 
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
@@ -252,7 +264,7 @@ public abstract class Table {
 
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
                 Statement stmt = conn.createStatement();
-                ResultSet rs = stmt.executeQuery(String.format(checkTable, query.tableName))) {
+                ResultSet rs = stmt.executeQuery(String.format(checkTable, query.define.tableName))) {
 
             ans = rs.next();
 

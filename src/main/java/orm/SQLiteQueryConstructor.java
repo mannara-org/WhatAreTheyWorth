@@ -2,28 +2,29 @@ package orm;
 
 import java.util.Arrays;
 import java.util.Vector;
+import java.util.stream.Stream;
 
 import orm.Constraints;
+import util.CaseConverter;
 import util.Pair;
-import static util.Console.print;
 
 import orm.Table.Range;
+
+import static util.Console.print;
+import static util.CaseConverter.*;
 
 class SQLiteQueryConstructor {
 
     final Table instance;
-    final Vector<Column> columns;
+    final Reflection reflect;
 
-    final String tableName;
     final DataDefinition define;
     final DataManipulation manipulate;
 
     SQLiteQueryConstructor(Table instance) {
 
         this.instance = instance;
-        this.tableName = instance.getClass().getSimpleName().toLowerCase() + "s";
-
-        this.columns = new Vector<>();
+        this.reflect = instance.reflect;
 
         this.define = new DataDefinition();
         this.manipulate = new DataManipulation();
@@ -53,11 +54,11 @@ class SQLiteQueryConstructor {
 
         PreparedQuery select(Vector<? extends Table> discreteCriterias, Vector<Range> boundedCriterias) {
 
-            init("SELECT * FROM " + tableName);
+            init("SELECT * FROM " + define.tableName);
 
-            for (i = 0; i < columns.size(); i++) {
+            for (i = 0; i < define.columnInfos.size(); i++) {
 
-                col = columns.elementAt(i);
+                col = define.columnInfos.elementAt(i);
 
                 if (col.constraints().upperBound()) {
                     continue;
@@ -76,18 +77,18 @@ class SQLiteQueryConstructor {
 
         PreparedQuery insert() {
 
-            init("INSERT INTO " + tableName + "(");
+            init("INSERT INTO " + define.tableName + "(");
             StringBuilder valuesQuery = new StringBuilder("VALUES (");
 
             boolean first = true;
-            for (i = 1; i < columns.size(); i++) {
+            for (i = 1; i < define.columnInfos.size(); i++) {
 
-                Object curr = instance.reflect.fields.get(i);
+                Object curr = reflect.fields.get(i);
                 if (curr == null) {
                     continue;
                 }
 
-                queryString.append((first ? "" : ", ") + columns.elementAt(i).name());
+                queryString.append((first ? "" : ", ") + define.columnInfos.elementAt(i).name());
                 valuesQuery.append((first ? "" : ", ") + "?");
                 queryInputs.add(curr);
                 first = false;
@@ -102,18 +103,18 @@ class SQLiteQueryConstructor {
 
         PreparedQuery update() {
 
-            StringBuilder query = new StringBuilder("UPDATE " + tableName + " SET ");
+            StringBuilder query = new StringBuilder("UPDATE " + define.tableName + " SET ");
             Vector<Object> inputs = new Vector<>();
 
             boolean first = true;
-            for (int i = 1; i < columns.size(); i++) {
+            for (int i = 1; i < define.columnInfos.size(); i++) {
 
-                Object curr = instance.reflect.fields.get(i);
+                Object curr = reflect.fields.get(i);
                 if (curr == null) {
                     continue;
                 }
 
-                query.append((!first ? ", " : "") + columns.elementAt(i).name() + " = ? ");
+                query.append((!first ? ", " : "") + define.columnInfos.elementAt(i).name() + " = ? ");
                 inputs.add(curr);
                 first = false;
             }
@@ -131,7 +132,7 @@ class SQLiteQueryConstructor {
 
             for (Range criteria : boundedCriterias) {
 
-                if (!criteria.isValidCriteriaFor(instance.reflect)) {
+                if (!criteria.isValidCriteriaFor(reflect)) {
                     String s = "Invalid bounded criteria: %s!";
                     throw new IllegalArgumentException(String.format(s, criteria));
                 }
@@ -168,9 +169,9 @@ class SQLiteQueryConstructor {
                     continue;
                 }
 
-                if (columns.elementAt(i).constraints().searchedText()) {
+                if (define.columnInfos.elementAt(i).constraints().searchedText()) {
                     boolean needOr = false;
-                    for (var att : instance.reflect.fields.haveConstraint(Constraints::searchedText)) {
+                    for (var att : reflect.fields.haveConstraint(Constraints::searchedText)) {
                         queryString.append((needOr ? " OR " : "") + att);
                         queryString.append(" LIKE ?");
                         queryInputs.add(String.valueOf(curr) + "%");
@@ -179,7 +180,7 @@ class SQLiteQueryConstructor {
                     continue;
                 }
 
-                queryString.append(columns.elementAt(i).name());
+                queryString.append(define.columnInfos.elementAt(i).name());
                 queryString.append(" IN (?");
                 queryInputs.add(curr);
                 close = true;
@@ -227,37 +228,61 @@ class SQLiteQueryConstructor {
 
     class DataDefinition {
 
+        final String tableName;
+        final Vector<Column> columnInfos;
+
         final private String tableCreationQuery;
 
+        /*
+         * CREATE TABLE payments(
+         * id INTEGER PRIMARY KEY AUTOINCREMENT,
+         * id_reservation INTEGER NOT NULL,
+         * date DATE NOT NULL,
+         * method TEXT NOT NULL,
+         * amount DECIMAL NOT NULL,
+         * FOREIGN KEY (id_reservation) REFERENCES reservations(id)
+         * )
+         */
         private DataDefinition() {
 
-            StringBuilder table = new StringBuilder("CREATE TABLE IF NOT EXISTS " + tableName + "(");
-            String[] names = Arrays.asList(instance.reflect.fields.names).toArray(String[]::new);
-            Constraints[] constraints = instance.reflect.fields.constraints;
-            Vector<String> foreignKeys = new Vector<>();
-            boolean first = true;
+            tableName = pascalToSnake(instance.getClass().getSimpleName()) + "s";
+            columnInfos = new Vector<>();
 
-            for (int i = 0; i < instance.reflect.fields.count; i++) {
+            Constraints[] constraints = reflect.fields.constraints;
+            String[] names = camelToSnake(reflect.fields.names);
+            String[] types = pascalToSnake(Stream
+                    .of(reflect.fields.types)
+                    .map(type -> type.getClass().getSimpleName())
+                    .toArray(String[]::new));
+
+            StringBuilder table = new StringBuilder("CREATE TABLE IF NOT EXISTS " + tableName + "(");
+            Vector<String> foreignKeyDefinitions = new Vector<>();
+            Vector<String> columnDefinitions = new Vector<>();
+
+            for (int i = 0; i < reflect.fields.count; i++) {
 
                 if (constraints[i].foreignKey()) {
-                    String foreignKey = "FOREIGN KEY (id_%s) REFERENCES %ss(id)";
-                    foreignKeys.add(String.format(foreignKey, names[i], names[i]));
-                    names[i] = "id_" + names[i];
+                    names[i] = names[i] + "_id";
+                    foreignKeyDefinitions.add("FOREIGN KEY (" + names[i] + ") REFERENCES " + types[i] + "s(id)");
                 }
 
-                table
-                        .append(first ? "" : ", ")
-                        .append(names[i] + " " + constraints[i].type())
-                        .append(constraints[i].nullable() ? "" : " NOT NULL")
-                        .append(constraints[i].primaryKey() ? " PRIMARY KEY AUTOINCREMENT" : "");
+                String columnDefinition = names[i] + " " + constraints[i].type();
+                columnDefinition += constraints[i].nullable() ? "" : " NOT NULL";
+                columnDefinition += constraints[i].primaryKey() ? " PRIMARY KEY AUTOINCREMENT" : "";
+                columnDefinitions.add(columnDefinition);
 
-                columns.add(new Column(names[i], constraints[i]));
-                first = false;
+                columnInfos.add(new Column(names[i], constraints[i]));
             }
 
-            for (String fk : foreignKeys) {
-                table.append(", " + fk);
+            String columns = String.join(", ", columnDefinitions);
+            String foreignKeys = String.join(", ", foreignKeyDefinitions);
+
+            if (!foreignKeys.equals("")) {
+                table.append(String.join(", ", columns, foreignKeys));
+            } else {
+                table.append(columns);
             }
+
             table.append(");");
 
             this.tableCreationQuery = table.toString();

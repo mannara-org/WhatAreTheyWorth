@@ -10,6 +10,14 @@ Programming at the time).
 
 It was overall a great learning experience.
 
+# Assumptions
+
+- All foreign and primary keys are INTs
+
+# Decisions
+
+- Lazy tuple validity check to allow for in-memory object graphs constructions
+
 ## Tutorial
 
 each model implementation `ModelClass` must:
@@ -124,3 +132,18 @@ mapper
 └── FieldValueMapper.java
 ```
 
+# OOP Lessons
+
+## Code reusablility & API Design
+
+- `util.CaseConverter` has a same implementation for pascal/camel case -> snake case (basically) and you also might want to use
+those functions for multiple arguments or a single argument
+> you separate between implementation detail and the exposed functions API (they should just be intuitive and makes sense
+> semantically)
+
+## Object-Oriented Separation of concerns
+
+- `orm.SQLiteQueryConstructor` the `columns` and `tableName` field used to be defined in the enclosing class and populated in the `DataDefinition`
+  which confused me when i re-read the code. The columns feild was then made to belong in the class that populated it. `tableName`
+  was populated and defined in the enclosing class when really it really wasn't the right place to since then the `DataDefinition`
+  assumed that it was already populated and thus a simple constructor re-ordering meant a really subtle bug.

@@ -13,7 +13,7 @@ public class Student extends Table {
         registerModel(Student.class);
     }
 
-    @Constraints(type = UNDEFINED, nullable = false, foreignKey = true)
+    @Constraints(type = INT, nullable = false, foreignKey = true)
     private Group group;
 
     @Constraints(type = TEXT, nullable = false)

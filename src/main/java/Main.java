@@ -269,9 +269,9 @@ public class Main {
 
         for (int i = 0; i < createdReservations.size(); i++) {
             Reservation r = createdReservations
-                .elementAt(i)
-                .setVehicle((Vehicle) vehicles.elementAt(i))
-                .setClient((Client) clients.elementAt(i));
+                    .elementAt(i)
+                    .setVehicle((Vehicle) vehicles.elementAt(i))
+                    .setClient((Client) clients.elementAt(i));
             if (r.add() < 1) {
                 error("ISSUE!");
             }

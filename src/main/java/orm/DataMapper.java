@@ -14,42 +14,39 @@ import static orm.Reflection.getModelInstance;
 
 class DataMapper {
 
-    private static Map<Class<?>,PreparedStatementSetter> javaClassPstmtSetter;
-    private static Map<Class<?>,ResultSetGetter> javaClassResultSetGetter;
+    private static Map<Class<?>, PreparedStatementSetter> javaClassPstmtSetter;
+    private static Map<Class<?>, ResultSetGetter> javaClassResultSetGetter;
 
     static {
         javaClassPstmtSetter = new HashMap<>();
         javaClassResultSetGetter = new HashMap<>();
         addType(
-            String.class, 
-            ResultSet::getString,
-            (pstmt, i, value) -> pstmt.setString(i, (String) value)
-        );
+                String.class,
+                ResultSet::getString,
+                (pstmt, i, value) -> pstmt.setString(i, (String) value));
         addType(
-            Double.class,
-            ResultSet::getDouble,
-            (pstmt, i, value) -> pstmt.setDouble(i, (Double) value)
-        );
+                Double.class,
+                ResultSet::getDouble,
+                (pstmt, i, value) -> pstmt.setDouble(i, (Double) value));
         addType(
-            Integer.class, 
-            ResultSet::getInt,
-            (pstmt, i, value) -> pstmt.setInt(i, (Integer) value)
-        );
+                Integer.class,
+                ResultSet::getInt,
+                (pstmt, i, value) -> pstmt.setInt(i, (Integer) value));
         addType(
-            LocalDate.class, 
-            (rs, col) -> Table.stringToDate(rs.getString(col)),
-            (pstmt, i, value) -> pstmt.setString(i, value.toString())
-        );
+                LocalDate.class,
+                (rs, col) -> Table.stringToDate(rs.getString(col)),
+                (pstmt, i, value) -> pstmt.setString(i, value.toString()));
     }
 
     static void bindValues(PreparedStatement pstmt, Vector<Object> atts) throws SQLException {
-        int i=1;
+        int i = 1;
         for (Object att : atts) {
             if (att instanceof Table) {
-                pstmt.setInt(i, ((Table)att).getId());
+                pstmt.setInt(i, ((Table) att).getId());
             } else {
                 getSetter(att.getClass()).set(pstmt, i, att);
-            } i++;
+            }
+            i++;
         }
     }
 
@@ -60,13 +57,15 @@ class DataMapper {
 
         while (rs.next()) {
             Table tuple = getModelInstance(className);
-            for (int i=0;i<tuple.reflect.fields.count;i++) {
-                String colName = tuple.query.columns.elementAt(i).name();
+            for (int i = 0; i < tuple.reflect.fields.count; i++) {
+                String colName = tuple.query.define.columnInfos.elementAt(i).name();
                 Class<?> attClass = tuple.reflect.fields.typeOf(i);
                 Object value = getValue(rs, colName, attClass);
                 tuple.reflect.fields.set(i, value);
-            } tuples.add(tuple);
-        } return tuples;
+            }
+            tuples.add(tuple);
+        }
+        return tuples;
     }
 
     private static Object getValue(ResultSet rs, String columnName, Class<?> attributeClass) throws SQLException {
