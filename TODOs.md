@@ -4,17 +4,18 @@
 
 ## Pending
 
+### ORM
+
+- test the ORM with a new schema with a sample data seeding
+
 ### GUI
 
 - Engineer a mapping layer to map data types to their corresponding input UI
-
-### ORM
-
-- test the ORM with a new schema
-	- Preliminary modelization of the new business purpose
-	- Sample data generation
-
 ## Done
+
+- Preliminary modelization of the new business purpose
+
+- initial migration of the preliminary modelization
 
 - `./frontend/src/main/java/gui/util/Parser.java` does too much. Extract the string/name management into a separate class
     - FieldValueMapper
