@@ -10,51 +10,68 @@ def gen_matricule():
     return str(random.randint(100_000_000_000, 999_999_999_999))
 
 
+def gen_phoneNumber():
+    return "0" + random.choice(["5", "6", "7"]) + str(random.randint(10_000_000, 99_999_999))
+
+
 fake = Faker('fr_DZ')
 
 specialties = []
 
 for specialty_data in SPECIALTIES:
 
-    sections = []
+    academicLevels = []
     specialty = {
         'name': specialty_data['name'],
         'acronyme': specialty_data['acronyme'],
         'cycle': specialty_data['cycle'],
-        'sections': sections,
+        'academicLevels': academicLevels,
     }
     specialties.append(specialty)
 
-    for section_number in range(1, specialty_data['nb_sections'] + 1):
-
-        groups = []
-        section = {
-            'number': section_number,
-            'groups': groups,
+    for academicLevel_number, academicLevel_data in enumerate(specialty_data['academicLevels']):
+        sections = []
+        academicLevel = {
+            'number': academicLevel_number + 1,
+            'sections': sections,
         }
-        sections.append(section)
+        academicLevels.append(academicLevel)
 
-        for group_number in range(1, specialty_data['nb_groups_per_section'] + 1):
+        for section_number in range(1, academicLevel_data['nb_sections'] + 1):
 
-            students = []
-            group = {
-                'number': group_number,
-                'students': students,
+            groups = []
+            section = {
+                'number': section_number,
+                'groups': groups,
             }
-            groups.append(group)
+            sections.append(section)
 
-            for student_number in range(1, specialty_data['nb_students_per_group'] + 1):
+            for group_number in range(1, academicLevel_data['nb_groups_per_section'] + 1):
+
                 [surname, name] = fake.name().split(" ")
-                student = {
-                    'name': name,
-                    'surname': surname,
-                    'matricule': gen_matricule(),
-                    'email': name + "." + surname + "@gmail.com",
+                students = []
+                group = {
+                    'number': group_number,
+                    'teachingAssistant': {
+                        'name': name,
+                        'surname': surname,
+                        'email': name + "." + surname + "@gmail.com",
+                        'phoneNumber': gen_phoneNumber(),
+                    },
+                    'students': students,
                 }
-                students.append(student)
+                groups.append(group)
 
+                for student_number in range(1, academicLevel_data['nb_students_per_group'] + 1):
+                    [surname, name] = fake.name().split(" ")
+                    student = {
+                        'name': name,
+                        'surname': surname,
+                        'email': name + "." + surname + "@gmail.com",
+                        'matricule': gen_matricule(),
+                    }
+                    students.append(student)
 
-print(f"{specialties=}", end='\n\n')
 
 with open('src/test/resources/samples/pedagogical_structure.json', 'w') as f:
     json.dump(specialties, f, indent=2)
